@@ -2,9 +2,9 @@
      JAVASCRIPT
      ════════════════════════════════════════════ */
 
-    /* ─────────────────────────────────────────────
-       DATA
-    ───────────────────────────────────────────── */
+/* ─────────────────────────────────────────────
+   DATA
+───────────────────────────────────────────── */
 let backendVendors = [];
 
 function getCategoryIcon(category) {
@@ -105,358 +105,358 @@ function renderHomeSections() {
 
 }
 
-    const DATA = {
-      categories: [
-        {
-          id: "food",
-          label: "Home Food",
-          icon: "fa-solid fa-utensils"
-        },
+const DATA = {
+  categories: [
+    {
+      id: "food",
+      label: "Home Food",
+      icon: "fa-solid fa-utensils"
+    },
 
-        {
-          id: "tailoring",
-          label: "Tailoring",
-          icon: "fa-solid fa-scissors"
-        },
+    {
+      id: "tailoring",
+      label: "Tailoring",
+      icon: "fa-solid fa-scissors"
+    },
 
-        {
-          id: "repairs",
-          label: "Repairs",
-          icon: "fa-solid fa-screwdriver-wrench"
-        },
+    {
+      id: "repairs",
+      label: "Repairs",
+      icon: "fa-solid fa-screwdriver-wrench"
+    },
 
-        {
-          id: "tutors",
-          label: "Tutors",
-          icon: "fa-solid fa-book-open"
-        },
+    {
+      id: "tutors",
+      label: "Tutors",
+      icon: "fa-solid fa-book-open"
+    },
 
-        {
-          id: "dairy",
-          label: "Dairy",
-          icon: "fa-solid fa-glass-water"
-        },
+    {
+      id: "dairy",
+      label: "Dairy",
+      icon: "fa-solid fa-glass-water"
+    },
 
-        {
-          id: "beauty",
-          label: "Beauty",
-          icon: "fa-solid fa-spa"
-        },
+    {
+      id: "beauty",
+      label: "Beauty",
+      icon: "fa-solid fa-spa"
+    },
 
-        {
-          id: "auto",
-          label: "Auto",
-          icon: "fa-solid fa-car-side"
-        },
+    {
+      id: "auto",
+      label: "Auto",
+      icon: "fa-solid fa-car-side"
+    },
 
-        {
-          id: "other",
-          label: "Other",
-          icon: "fa-solid fa-seedling"
-        },
-      ],
-      users: [
-        {
-          id: 1,
-          name: "Priya Sharma",
-          handle: "priya.sharma",
-          city: "Koramangala",
-          color: "#C0392B",
-          recs: 4,
-          vouches: 7,
-          score: 62
-        }
-      ],
+    {
+      id: "other",
+      label: "Other",
+      icon: "fa-solid fa-seedling"
+    },
+  ],
+  users: [
+    {
+      id: 1,
+      name: "Priya Sharma",
+      handle: "priya.sharma",
+      city: "Koramangala",
+      color: "#C0392B",
+      recs: 4,
+      vouches: 7,
+      score: 62
+    }
+  ],
 
-      activity: [
-        {
-          user: "Ananya M.",
-          col: "#C0392B",
-          action: "recommended",
-          biz: "Sunita's Tiffins",
-          time: "2 min ago"
-        },
+  activity: [
+    {
+      user: "Ananya M.",
+      col: "#C0392B",
+      action: "recommended",
+      biz: "Sunita's Tiffins",
+      time: "2 min ago"
+    },
 
-        {
-          user: "Kiran T.",
-          col: "#1A4FA0",
-          action: "vouched for",
-          biz: "SK Hardware",
-          time: "5 min ago"
-        },
+    {
+      user: "Kiran T.",
+      col: "#1A4FA0",
+      action: "vouched for",
+      biz: "SK Hardware",
+      time: "5 min ago"
+    },
 
-        {
-          user: "Deepa S.",
-          col: "#1E6645",
-          action: "shared a story about",
-          biz: "Ramu Tailor",
-          time: "11 min ago"
-        },
+    {
+      user: "Deepa S.",
+      col: "#1E6645",
+      action: "shared a story about",
+      biz: "Ramu Tailor",
+      time: "11 min ago"
+    },
 
-        {
-          user: "Meera P.",
-          col: "#D4A017",
-          action: "recommended",
-          biz: "Lakshmi Dairy",
-          time: "18 min ago"
-        },
+    {
+      user: "Meera P.",
+      col: "#D4A017",
+      action: "recommended",
+      biz: "Lakshmi Dairy",
+      time: "18 min ago"
+    },
 
-        {
-          user: "Rahul V.",
-          col: "#6B4E35",
-          action: "vouched for",
-          biz: "Geetha Tutorials",
-          time: "25 min ago"
-        },
+    {
+      user: "Rahul V.",
+      col: "#6B4E35",
+      action: "vouched for",
+      biz: "Geetha Tutorials",
+      time: "25 min ago"
+    },
 
-        {
-          user: "Nisha A.",
-          col: "#C0392B",
-          action: "recommended",
-          biz: "Priya Beauty Studio",
-          time: "31 min ago"
-        },
-      ],
-      contributors: [
-        {
-          name: "Ananya M.",
-          area: "Koramangala",
-          recs: 12,
-          col: "#C0392B"
-        },
+    {
+      user: "Nisha A.",
+      col: "#C0392B",
+      action: "recommended",
+      biz: "Priya Beauty Studio",
+      time: "31 min ago"
+    },
+  ],
+  contributors: [
+    {
+      name: "Ananya M.",
+      area: "Koramangala",
+      recs: 12,
+      col: "#C0392B"
+    },
 
-        {
-          name: "Kiran T.",
-          area: "Indiranagar",
-          recs: 9,
-          col: "#1A4FA0"
-        },
+    {
+      name: "Kiran T.",
+      area: "Indiranagar",
+      recs: 9,
+      col: "#1A4FA0"
+    },
 
-        {
-          name: "Deepa S.",
-          area: "Jayanagar",
-          recs: 8,
-          col: "#1E6645"
-        },
+    {
+      name: "Deepa S.",
+      area: "Jayanagar",
+      recs: 8,
+      col: "#1E6645"
+    },
 
-        {
-          name: "Meera P.",
-          area: "HSR Layout",
-          recs: 7,
-          col: "#D4A017"
-        },
-      ]
-    };
+    {
+      name: "Meera P.",
+      area: "HSR Layout",
+      recs: 7,
+      col: "#D4A017"
+    },
+  ]
+};
 
-    /* ─────────────────────────────────────────────
-   APP STATE
+/* ─────────────────────────────────────────────
+APP STATE
 ───────────────────────────────────────────── */
-    const S = {
-      page: 'home',
+const S = {
+  page: 'home',
 
-      user: null,
+  user: null,
 
-      vendorId: null,
+  vendorId: null,
 
-      favs: new Set(
-        JSON.parse(localStorage.getItem('ll4_favs') || '[]')
-      ),
+  favs: new Set(
+      JSON.parse(localStorage.getItem('ll4_favs') || '[]')
+  ),
 
-      rv: JSON.parse(
-        localStorage.getItem('ll4_rv') || '[]'
-      ),
+  rv: JSON.parse(
+      localStorage.getItem('ll4_rv') || '[]'
+  ),
 
-      dark: localStorage.getItem('ll4_theme') === 'dark',
+  dark: localStorage.getItem('ll4_theme') === 'dark',
 
-      feedFilter: {
-        cat: 'all',
-        trust: 'all',
-        status: 'all',
-        q: '',
-        sort: 'trust'
-      },
+  feedFilter: {
+    cat: 'all',
+    trust: 'all',
+    status: 'all',
+    q: '',
+    sort: 'trust'
+  },
 
-      recStep: 1,
+  recStep: 1,
 
-      recData: {
-        cat: '',
-        name: '',
-        location: '',
-        phone: '',
-        story: '',
-        stars: 0,
-        nb: true
-      },
+  recData: {
+    cat: '',
+    name: '',
+    location: '',
+    phone: '',
+    story: '',
+    stars: 0,
+    nb: true
+  },
 
-      reportReason: '',
+  reportReason: '',
 
-      vouchVendorId: null,
+  vouchVendorId: null,
 
-      userTab: 'recs',
-    };
-    /* ─────────────────────────────────────────────
-   THEME
+  userTab: 'recs',
+};
+/* ─────────────────────────────────────────────
+THEME
 ───────────────────────────────────────────── */
-    function toggleTheme() {
+function toggleTheme() {
 
-      S.dark = !S.dark;
+  S.dark = !S.dark;
 
-      document.documentElement.setAttribute(
-        'data-theme',
-        S.dark ? 'dark' : 'light'
-      );
-      if (S.vendorId) {
-        renderVendorProfile(S.vendorId);
-      }
+  document.documentElement.setAttribute(
+      'data-theme',
+      S.dark ? 'dark' : 'light'
+  );
+  if (S.vendorId) {
+    renderVendorProfile(S.vendorId);
+  }
 
-      localStorage.setItem(
-        'll4_theme',
-        S.dark ? 'dark' : 'light'
-      );
+  localStorage.setItem(
+      'll4_theme',
+      S.dark ? 'dark' : 'light'
+  );
 
-      document.getElementById('theme-btn').innerHTML =
-        S.dark
+  document.getElementById('theme-btn').innerHTML =
+      S.dark
           ? '<i class="fa-solid fa-sun"></i>'
           : '<i class="fa-solid fa-moon"></i>';
-    }
+}
 
-    if (S.dark) {
+if (S.dark) {
 
-      document.documentElement.setAttribute('data-theme', 'dark');
+  document.documentElement.setAttribute('data-theme', 'dark');
 
-      document.getElementById('theme-btn').innerHTML =
-        '<i class="fa-solid fa-sun"></i>';
-    }
-    /* ─────────────────────────────────────────────
-   TOAST
+  document.getElementById('theme-btn').innerHTML =
+      '<i class="fa-solid fa-sun"></i>';
+}
+/* ─────────────────────────────────────────────
+TOAST
 ───────────────────────────────────────────── */
-    function toast(msg, type = 'info', dur = 3200) {
+function toast(msg, type = 'info', dur = 3200) {
 
-      const icons = {
-        info: 'fa-solid fa-circle-info',
-        success: 'fa-solid fa-circle-check',
-        error: 'fa-solid fa-circle-xmark',
-        warning: 'fa-solid fa-triangle-exclamation'
-      };
+  const icons = {
+    info: 'fa-solid fa-circle-info',
+    success: 'fa-solid fa-circle-check',
+    error: 'fa-solid fa-circle-xmark',
+    warning: 'fa-solid fa-triangle-exclamation'
+  };
 
-      const cls = {
-        info: '',
-        success: 'toast-s',
-        error: 'toast-e',
-        warning: 'toast-w'
-      };
+  const cls = {
+    info: '',
+    success: 'toast-s',
+    error: 'toast-e',
+    warning: 'toast-w'
+  };
 
-      const el = document.createElement('div');
+  const el = document.createElement('div');
 
-      el.className = 'toast ' + cls[type];
+  el.className = 'toast ' + cls[type];
 
-      el.innerHTML =
-        '<span><i class="' + icons[type] + '"></i></span>' +
-        '<span>' + msg + '</span>' +
-        '<button class="t-close" onclick="this.parentElement.remove()">×</button>';
+  el.innerHTML =
+      '<span><i class="' + icons[type] + '"></i></span>' +
+      '<span>' + msg + '</span>' +
+      '<button class="t-close" onclick="this.parentElement.remove()">×</button>';
 
-      document.getElementById('toasts').appendChild(el);
+  document.getElementById('toasts').appendChild(el);
 
-      setTimeout(() => {
+  setTimeout(() => {
 
-        el.style.animation = 'tOut .3s ease forwards';
+    el.style.animation = 'tOut .3s ease forwards';
 
-        setTimeout(() => el.remove(), 300);
+    setTimeout(() => el.remove(), 300);
 
-      }, dur);
-    }
+  }, dur);
+}
 
-    /* ─────────────────────────────────────────────
-   MODAL
-───────────────────────────────────────────── */
-
-    function openModal(id) {
-
-      document.getElementById(id).classList.remove('hidden');
-
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal(id) {
-
-      document.getElementById(id).classList.add('hidden');
-
-      document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.overlay').forEach(o => {
-
-      o.addEventListener('click', e => {
-
-        if (e.target === o) closeModal(o.id);
-
-      });
-
-    });
-
-    /* ─────────────────────────────────────────────
-   NAV & ROUTING
+/* ─────────────────────────────────────────────
+MODAL
 ───────────────────────────────────────────── */
 
-    function go(pg, opts = {}) {
+function openModal(id) {
 
-      document.querySelectorAll('.page').forEach(p => {
-        p.classList.remove('on');
-      });
+  document.getElementById(id).classList.remove('hidden');
 
-      const el =
-        document.getElementById('pg-' + pg) ||
-        document.getElementById('pg-user-profile');
+  document.body.style.overflow = 'hidden';
+}
 
-      if (!el) return;
+function closeModal(id) {
 
-      el.classList.add('on');
+  document.getElementById(id).classList.add('hidden');
 
-      S.page = pg;
+  document.body.style.overflow = '';
+}
 
-      document.querySelectorAll('.nav-link').forEach(l => {
+document.querySelectorAll('.overlay').forEach(o => {
 
-        l.classList.toggle('on', l.dataset.p === pg);
+  o.addEventListener('click', e => {
 
-      });
+    if (e.target === o) closeModal(o.id);
 
-      document.getElementById('swa').classList.toggle(
-        'show',
-        pg === 'profile' || pg === 'vendor'
-      );
+  });
 
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+});
 
-      if (pg === 'home') renderHome();
+/* ─────────────────────────────────────────────
+NAV & ROUTING
+───────────────────────────────────────────── */
 
-      if (pg === 'feed') renderFeed();
+function go(pg, opts = {}) {
 
-      if (pg === 'profile') {
-        renderVendorProfile(opts.id || S.vendorId);
-      }
+  document.querySelectorAll('.page').forEach(p => {
+    p.classList.remove('on');
+  });
 
-      if (pg === 'user-profile') {
-        renderUserProfile();
-      }
+  const el =
+      document.getElementById('pg-' + pg) ||
+      document.getElementById('pg-user-profile');
 
-      if (pg === 'vendor') {
-        renderVendorPage();
-      }
-    }
+  if (!el) return;
 
-    function goProfile(id) {
+  el.classList.add('on');
 
-      S.vendorId = id;
+  S.page = pg;
 
-      go('profile', { id });
+  document.querySelectorAll('.nav-link').forEach(l => {
 
-    }
+    l.classList.toggle('on', l.dataset.p === pg);
 
-    /* ─────────────────────────────────────────────
-   AUTH — FIXED: validates properly, no fake login
+  });
+
+  document.getElementById('swa').classList.toggle(
+      'show',
+      pg === 'profile' || pg === 'vendor'
+  );
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  if (pg === 'home') renderHome();
+
+  if (pg === 'feed') renderFeed();
+
+  if (pg === 'profile') {
+    renderVendorProfile(opts.id || S.vendorId);
+  }
+
+  if (pg === 'user-profile') {
+    renderUserProfile();
+  }
+
+  if (pg === 'vendor') {
+    renderVendorPage();
+  }
+}
+
+function goProfile(id) {
+
+  S.vendorId = id;
+
+  go('profile', { id });
+
+}
+
+/* ─────────────────────────────────────────────
+AUTH — FIXED: validates properly, no fake login
 ───────────────────────────────────────────── */
 
 function switchAuth(mode) {
@@ -485,364 +485,207 @@ function switchAuth(mode) {
   }
 }
 
-    function togglePwd(id, icon) {
+function togglePwd(id, icon) {
 
-      const i = document.getElementById(id);
+  const i = document.getElementById(id);
 
-      i.type = i.type === 'password'
-        ? 'text'
-        : 'password';
+  i.type = i.type === 'password'
+      ? 'text'
+      : 'password';
 
-      icon.innerHTML =
-        i.type === 'password'
+  icon.innerHTML =
+      i.type === 'password'
           ? '<i class="fa-solid fa-eye"></i>'
           : '<i class="fa-solid fa-eye-slash"></i>';
-    }
+}
 
-    function calcStrength(v) {
+function calcStrength(v) {
 
-      const s =
-        (v.length >= 8 ? 1 : 0) +
-        (/[A-Z]/.test(v) ? 1 : 0) +
-        (/[0-9]/.test(v) ? 1 : 0) +
-        (/[^A-Za-z0-9]/.test(v) ? 1 : 0);
+  const s =
+      (v.length >= 8 ? 1 : 0) +
+      (/[A-Z]/.test(v) ? 1 : 0) +
+      (/[0-9]/.test(v) ? 1 : 0) +
+      (/[^A-Za-z0-9]/.test(v) ? 1 : 0);
 
-      const bar = document.getElementById('pstrength');
+  const bar = document.getElementById('pstrength');
 
-      const lbl = document.getElementById('pslabel');
+  const lbl = document.getElementById('pslabel');
 
-      const colors = [
-        '',
-        '#C0392B',
-        '#C0392B',
-        '#D4A017',
-        '#D4A017',
-        '#1E6645'
-      ];
+  const colors = [
+    '',
+    '#C0392B',
+    '#C0392B',
+    '#D4A017',
+    '#D4A017',
+    '#1E6645'
+  ];
 
-      const labels = [
-        '',
-        'Weak',
-        'Weak',
-        'Fair',
-        'Good',
-        'Strong'
-      ];
+  const labels = [
+    '',
+    'Weak',
+    'Weak',
+    'Fair',
+    'Good',
+    'Strong'
+  ];
 
-      if (bar) {
+  if (bar) {
 
-        bar.style.width = (s * 25) + '%';
+    bar.style.width = (s * 25) + '%';
 
-        bar.style.background =
-          colors[s] || '#C0392B';
-      }
+    bar.style.background =
+        colors[s] || '#C0392B';
+  }
 
-      if (lbl) {
+  if (lbl) {
 
-        lbl.textContent =
-          labels[s] || '';
-      }
-    }
+    lbl.textContent =
+        labels[s] || '';
+  }
+}
 
-    // Simulated user store — in production this would be a server call
+async function doLogin() {
 
-    const MOCK_USERS = [
+  const email = document.getElementById('l-email').value.trim();
+  const password = document.getElementById('l-pass').value;
 
-      {
-        email: 'demo@locallift.in',
-        pass: 'demo1234',
+  if (!email || !password) {
 
-        name: 'Priya Sharma',
-        handle: 'priya.sharma',
-        city: 'Koramangala',
+    toast('Please enter email and password', 'error');
+    return;
+  }
 
-        color: '#C0392B',
+  const btn = document.getElementById('login-btn');
 
-        recs: 4,
-        vouches: 7,
-        score: 62
+  btn.disabled = true;
+  btn.textContent = 'Signing In...';
+
+  try {
+
+    const response = await fetch('/api/auth/login', {
+
+      method: 'POST',
+
+      headers: {
+        'Content-Type': 'application/json'
       },
 
-      {
-        email: 'test@test.com',
-        pass: 'test1234',
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    });
 
-        name: 'Test User',
-        handle: 'test.user',
-        city: 'Bengaluru',
+    if (!response.ok) {
 
-        color: '#1A4FA0',
+      throw new Error('Invalid email or password');
+    }
 
-        recs: 1,
-        vouches: 2,
-        score: 20
+    const user = await response.json();
+
+    S.user = {
+      id: user.id,
+      name: `${user.firstName} ${user.lastName}`,
+      handle: user.email.split('@')[0],
+      city: user.city || 'India',
+      color: '#E8651A',
+      recs: 0,
+      vouches: 0,
+      score: 0
+    };
+
+    updateNavUser();
+
+    closeModal('m-auth');
+
+    sessionStorage.setItem(
+        'll4_user',
+        JSON.stringify(S.user)
+    );
+
+    toast(
+        'Welcome back, ' + user.firstName + '!',
+        'success'
+    );
+
+    document.getElementById('l-email').value = '';
+    document.getElementById('l-pass').value = '';
+
+  } catch (error) {
+
+    console.error(error);
+
+    toast(
+        'Invalid email or password',
+        'error'
+    );
+
+  } finally {
+
+    btn.disabled = false;
+    btn.textContent = 'Sign In';
+  }
+}
+
+async function doSignup() {
+
+  const firstName =
+      document.getElementById('s-fname').value.trim();
+
+  const lastName =
+      document.getElementById('s-lname').value.trim();
+
+  const email =
+      document.getElementById('s-email').value.trim();
+
+  const password =
+      document.getElementById('s-pass').value;
+
+  const city =
+      document.getElementById('s-city').value.trim();
+
+  try {
+
+    const response = await fetch('/api/auth/signup', {
+
+      method: 'POST',
+
+      headers: {
+        'Content-Type': 'application/json'
       },
 
-    ];
+      body: JSON.stringify({
 
-    function doLogin() {
+        firstName,
+        lastName,
+        email,
+        password,
+        city
+      })
+    });
 
-      const emailEl = document.getElementById('l-email');
+    if (!response.ok) {
 
-      const passEl = document.getElementById('l-pass');
-
-      const email = emailEl.value.trim();
-
-      const pass = passEl.value;
-
-      let ok = true;
-
-      // Validate email format
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-
-        document.getElementById('l-email-e')
-          .classList.remove('hidden');
-
-        ok = false;
-
-      } else {
-
-        document.getElementById('l-email-e')
-          .classList.add('hidden');
-      }
-
-      // Validate password present and min length
-      if (!pass || pass.length < 6) {
-
-        document.getElementById('l-pass-e')
-          .classList.remove('hidden');
-
-        ok = false;
-
-      } else {
-
-        document.getElementById('l-pass-e')
-          .classList.add('hidden');
-      }
-
-      if (!ok) return;
-
-      const btn = document.getElementById('login-btn');
-
-      btn.classList.add('btn-spin');
-
-      btn.innerHTML = '';
-
-      btn.disabled = true;
-
-      setTimeout(() => {
-
-        btn.classList.remove('btn-spin');
-
-        btn.disabled = false;
-
-        btn.textContent = 'Sign In';
-
-        // Check against mock users
-        let found = MOCK_USERS.find(
-          u =>
-            u.email.toLowerCase() === email.toLowerCase() &&
-            u.pass === pass
-        );
-
-        // If not in mock store: still allow login
-        if (!found) {
-
-          found = {
-            id: Date.now(),
-
-            name: email
-              .split('@')[0]
-              .replace(/[._]/g, ' ')
-              .replace(/\b\w/g, c => c.toUpperCase()),
-
-            handle: email.split('@')[0],
-
-            city: 'India',
-
-            color: '#E8651A',
-
-            recs: 0,
-
-            vouches: 0,
-
-            score: 0
-          };
-        }
-
-        S.user = {
-          ...found,
-          id: found.id || 1
-        };
-
-        updateNavUser();
-
-        closeModal('m-auth');
-
-        // Reset form
-        emailEl.value = '';
-
-        passEl.value = '';
-
-        toast(
-          'Welcome back, ' +
-          S.user.name.split(' ')[0] +
-          '!',
-          'success'
-        );
-
-        sessionStorage.setItem(
-            'll4_user',
-            JSON.stringify(S.user)
-        );
-
-      }, 1000);
+      throw new Error('Signup failed');
     }
 
-    function doSignup() {
+    toast(
+        'Account created successfully!',
+        'success'
+    );
 
-      const email =
-        document.getElementById('s-email')
-          .value.trim();
+    switchAuth('login');
 
-      const pass =
-        document.getElementById('s-pass')
-          .value;
+  } catch (error) {
 
-      const terms =
-        document.getElementById('s-terms')
-          .checked;
+    console.error(error);
 
-      let ok = true;
-
-      if (
-        !email ||
-        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-      ) {
-
-        document.getElementById('s-email-e')
-          .classList.remove('hidden');
-
-        ok = false;
-
-      } else {
-
-        document.getElementById('s-email-e')
-          .classList.add('hidden');
-      }
-
-      if (!ok) return;
-
-      if (pass.length < 8) {
-
-        toast(
-          'Password must be at least 8 characters',
-          'error'
-        );
-
-        return;
-      }
-
-      if (!terms) {
-
-        toast(
-          'Please accept the Community Guidelines',
-          'error'
-        );
-
-        return;
-      }
-
-      const fname =
-        document.getElementById('s-fname')
-          .value.trim() || 'Neighbour';
-
-      const lname =
-        document.getElementById('s-lname')
-          .value.trim();
-
-      const city =
-        document.getElementById('s-city')
-          .value.trim() || 'India';
-
-      const btn =
-        document.getElementById('signup-btn');
-
-      btn.classList.add('btn-spin');
-
-      btn.innerHTML = '';
-
-      btn.disabled = true;
-
-      setTimeout(() => {
-
-        btn.classList.remove('btn-spin');
-
-        btn.disabled = false;
-
-        btn.textContent = 'Join LocalLift';
-
-        S.user = {
-
-          id: Date.now(),
-
-          name: (fname + ' ' + lname).trim(),
-
-          handle: fname
-            .toLowerCase()
-            .replace(/\s/g, '.'),
-
-          city,
-
-          color: '#E8651A',
-
-          recs: 0,
-
-          vouches: 0,
-
-          score: 0
-        };
-
-        updateNavUser();
-
-        closeModal('m-auth');
-
-        // Reset form
-        [
-          's-fname',
-          's-lname',
-          's-email',
-          's-pass',
-          's-city'
-        ].forEach(id => {
-
-          const el = document.getElementById(id);
-
-          if (el) el.value = '';
-
-        });
-
-        document.getElementById('s-terms').checked = false;
-
-        document.getElementById('pstrength').style.width = '0%';
-
-        document.getElementById('pslabel').textContent =
-          'Password strength';
-
-        toast(
-          'Welcome to LocalLift, ' +
-          fname +
-          '! Start by recommending a business you trust.',
-          'success'
-        );
-
-        localStorage.setItem(
-          'll4_user',
-          JSON.stringify(S.user)
-        );
-
-      }, 1200);
-    }
+    toast(
+        'Unable to create account',
+        'error'
+    );
+  }
+}
 
 function socialAuth(provider) {
 
@@ -852,183 +695,183 @@ function socialAuth(provider) {
   );
 
 }
-    function updateNavUser() {
+function updateNavUser() {
 
-      const g = document.getElementById('nav-guest');
+  const g = document.getElementById('nav-guest');
 
-      const u = document.getElementById('nav-user');
+  const u = document.getElementById('nav-user');
 
-      const av = document.getElementById('nav-av');
+  const av = document.getElementById('nav-av');
 
-      if (S.user) {
+  if (S.user) {
 
-        g.style.display = 'none';
+    g.style.display = 'none';
 
-        u.classList.remove('hidden');
+    u.classList.remove('hidden');
 
-        u.style.display = 'flex';
+    u.style.display = 'flex';
 
-        av.textContent =
-          S.user.name[0].toUpperCase();
+    av.textContent =
+        S.user.name[0].toUpperCase();
 
-        av.style.background =
-          S.user.color || '#E8651A';
+    av.style.background =
+        S.user.color || '#E8651A';
 
-      } else {
+  } else {
 
-        g.style.display = 'flex';
+    g.style.display = 'flex';
 
-        u.classList.add('hidden');
+    u.classList.add('hidden');
 
-        u.style.display = 'none';
-      }
-    }
+    u.style.display = 'none';
+  }
+}
 
-    // Restore session
+// Restore session
 
-    try {
+try {
 
-      const saved =
-          sessionStorage.getItem('ll4_user')
+  const saved =
+      sessionStorage.getItem('ll4_user')
 
-      if (saved) {
+  if (saved) {
 
-        S.user = JSON.parse(saved);
+    S.user = JSON.parse(saved);
 
-        updateNavUser();
-      }
+    updateNavUser();
+  }
 
-    } catch (e) {
+} catch (e) {
 
-      localStorage.removeItem('ll4_user');
-    }
+  localStorage.removeItem('ll4_user');
+}
 
-    function doLogout() {
+function doLogout() {
 
-      S.user = null;
+  S.user = null;
 
-      updateNavUser();
+  updateNavUser();
 
-      sessionStorage.removeItem('ll4_user');
+  sessionStorage.removeItem('ll4_user');
 
-      go('home');
+  go('home');
 
-      toast(
-        'Signed out. See you again!',
-        'info'
-      );
-    }
+  toast(
+      'Signed out. See you again!',
+      'info'
+  );
+}
 
-    /* ─────────────────────────────────────────────
-   RECOMMEND FLOW — FIXED: full reset after submit, no freezing
+/* ─────────────────────────────────────────────
+RECOMMEND FLOW — FIXED: full reset after submit, no freezing
 ───────────────────────────────────────────── */
 
-    function openRecommend() {
+function openRecommend() {
 
-      if (!S.user) {
+  if (!S.user) {
 
-        openModal('m-auth');
+    openModal('m-auth');
 
-        return;
-      }
+    return;
+  }
 
-      // Full reset of state and form
-      S.recStep = 1;
+  // Full reset of state and form
+  S.recStep = 1;
 
-      S.recData = {
-        cat: '',
-        name: '',
-        location: '',
-        phone: '',
-        story: '',
-        stars: 0,
-        nb: true
-      };
+  S.recData = {
+    cat: '',
+    name: '',
+    location: '',
+    phone: '',
+    story: '',
+    stars: 0,
+    nb: true
+  };
 
-      // Reset form fields
-      const fields = [
-        'rec-biz-name',
-        'rec-location',
-        'rec-phone',
-        'rec-story'
-      ];
+  // Reset form fields
+  const fields = [
+    'rec-biz-name',
+    'rec-location',
+    'rec-phone',
+    'rec-story'
+  ];
 
-      fields.forEach(id => {
+  fields.forEach(id => {
 
-        const el = document.getElementById(id);
+    const el = document.getElementById(id);
 
-        if (el) el.value = '';
+    if (el) el.value = '';
 
-      });
+  });
 
-      const nbCheck =
-        document.getElementById('rec-nb');
+  const nbCheck =
+      document.getElementById('rec-nb');
 
-      if (nbCheck) {
+  if (nbCheck) {
 
-        nbCheck.checked = true;
-      }
+    nbCheck.checked = true;
+  }
 
-      // Re-enable submit button
-      const postBtn =
-        document.getElementById('post-rec-btn');
+  // Re-enable submit button
+  const postBtn =
+      document.getElementById('post-rec-btn');
 
-      if (postBtn) {
+  if (postBtn) {
 
-        postBtn.disabled = false;
+    postBtn.disabled = false;
 
-        postBtn.innerHTML =
-          '<i class="fa-solid fa-shop" style="margin-right:8px;"></i>Post Recommendation';
-      }
+    postBtn.innerHTML =
+        '<i class="fa-solid fa-shop" style="margin-right:8px;"></i>Post Recommendation';
+  }
 
-      // Render UI
-      renderRecSteps();
+  // Render UI
+  renderRecSteps();
 
-      renderRecCatGrid();
+  renderRecCatGrid();
 
-      renderRecStars();
+  renderRecStars();
 
-      // Show step 1, hide others
-      document.querySelectorAll('.rec-step-content')
-        .forEach(c => c.classList.remove('on'));
+  // Show step 1, hide others
+  document.querySelectorAll('.rec-step-content')
+      .forEach(c => c.classList.remove('on'));
 
-      const step1 =
-        document.getElementById('rs-1');
+  const step1 =
+      document.getElementById('rs-1');
 
-      if (step1) {
+  if (step1) {
 
-        step1.classList.add('on');
-      }
+    step1.classList.add('on');
+  }
 
-      openModal('m-recommend');
-    }
+  openModal('m-recommend');
+}
 
-    function renderRecSteps() {
+function renderRecSteps() {
 
-      const steps = [
-        'Business',
-        'Your Story',
-        'Post'
-      ];
+  const steps = [
+    'Business',
+    'Your Story',
+    'Post'
+  ];
 
-      document.getElementById('rec-steps').innerHTML =
-        steps.map((l, i) => {
+  document.getElementById('rec-steps').innerHTML =
+      steps.map((l, i) => {
 
-          const n = i + 1;
+        const n = i + 1;
 
-          const done = n < S.recStep;
+        const done = n < S.recStep;
 
-          const cur = n === S.recStep;
+        const cur = n === S.recStep;
 
-          return `
+        return `
         <div class="rs-step">
 
           <div class="rs-dot ${done ? 'done' : cur ? 'cur' : ''}">
 
             ${done
-              ? '✓'
-              : n
-            }
+            ? '✓'
+            : n
+        }
 
           </div>
 
@@ -1037,218 +880,218 @@ function socialAuth(provider) {
         </div>
       `;
 
-        }).join('');
-    }
+      }).join('');
+}
 
 
 
-    function renderRecCatGrid() {
+function renderRecCatGrid() {
 
-      const grid =
-        document.getElementById('rec-cat-grid');
+  const grid =
+      document.getElementById('rec-cat-grid');
 
-      if (!grid) return;
+  if (!grid) return;
 
-      grid.innerHTML = DATA.categories.map(c =>
+  grid.innerHTML = DATA.categories.map(c =>
 
-        '<div class="cat-sel ' +
-        (S.recData.cat === c.id ? 'on' : '') +
-        '" onclick="pickRecCat(\'' + c.id + '\',this)">' +
+      '<div class="cat-sel ' +
+      (S.recData.cat === c.id ? 'on' : '') +
+      '" onclick="pickRecCat(\'' + c.id + '\',this)">' +
 
-        '<div class="cat-emoji">' +
-        '<i class="' + c.icon + '"></i>' +
-        '</div>' +
+      '<div class="cat-emoji">' +
+      '<i class="' + c.icon + '"></i>' +
+      '</div>' +
 
-        '<div class="cat-label">' +
-        c.label +
-        '</div>' +
+      '<div class="cat-label">' +
+      c.label +
+      '</div>' +
 
-        '</div>'
+      '</div>'
 
-      ).join('');
-    }
+  ).join('');
+}
 
-    function pickRecCat(id, el) {
+function pickRecCat(id, el) {
 
-      S.recData.cat = id;
+  S.recData.cat = id;
 
-      document.querySelectorAll('#rec-cat-grid .cat-sel')
-        .forEach(c => c.classList.remove('on'));
+  document.querySelectorAll('#rec-cat-grid .cat-sel')
+      .forEach(c => c.classList.remove('on'));
 
-      el.classList.add('on');
-    }
+  el.classList.add('on');
+}
 
-    function renderRecStars() {
+function renderRecStars() {
 
-      const row =
-        document.getElementById('rec-stars');
+  const row =
+      document.getElementById('rec-stars');
 
-      if (!row) return;
+  if (!row) return;
 
-      row.innerHTML = [1, 2, 3, 4, 5].map(n =>
+  row.innerHTML = [1, 2, 3, 4, 5].map(n =>
 
-        '<span class="star-b ' +
-        (n <= S.recData.stars ? 'lit' : '') +
-        '" onclick="pickRecStars(' + n + ')">' +
+      '<span class="star-b ' +
+      (n <= S.recData.stars ? 'lit' : '') +
+      '" onclick="pickRecStars(' + n + ')">' +
 
-        '<i class="fa-solid fa-star"></i>' +
+      '<i class="fa-solid fa-star"></i>' +
 
-        '</span>'
+      '</span>'
 
-      ).join('');
-    }
+  ).join('');
+}
 
-    function pickRecStars(n) {
+function pickRecStars(n) {
 
-      S.recData.stars = n;
+  S.recData.stars = n;
 
-      renderRecStars();
-    }
+  renderRecStars();
+}
 
-    function recNext(step) {
+function recNext(step) {
 
-      if (step > S.recStep) {
+  if (step > S.recStep) {
 
-        if (S.recStep === 1) {
+    if (S.recStep === 1) {
 
-          const name =
-            document.getElementById('rec-biz-name')
+      const name =
+          document.getElementById('rec-biz-name')
               .value.trim();
 
-          if (!S.recData.cat) {
+      if (!S.recData.cat) {
 
-            toast(
-              'Please select a category',
-              'error'
-            );
+        toast(
+            'Please select a category',
+            'error'
+        );
 
-            return;
-          }
-
-          if (!name) {
-
-            toast(
-              'Please enter the business name',
-              'error'
-            );
-
-            return;
-          }
-
-          S.recData.name = name;
-
-          S.recData.location =
-            document.getElementById('rec-location')
-              .value.trim();
-
-          S.recData.phone =
-            document.getElementById('rec-phone')
-              .value.trim();
-        }
-
-        if (S.recStep === 2) {
-
-          const story =
-            document.getElementById('rec-story')
-              .value.trim();
-
-          if (story.length < 20) {
-
-            toast(
-              'Please share a story (at least 20 characters)',
-              'error'
-            );
-
-            return;
-          }
-
-          if (!S.recData.stars) {
-
-            toast(
-              'Please rate your experience',
-              'error'
-            );
-
-            return;
-          }
-
-          S.recData.story = story;
-
-          buildRecPreview();
-        }
+        return;
       }
 
-      document.querySelectorAll('.rec-step-content')
-        .forEach(c => c.classList.remove('on'));
+      if (!name) {
 
-      const target =
-        document.getElementById('rs-' + step);
+        toast(
+            'Please enter the business name',
+            'error'
+        );
 
-      if (target) {
-
-        target.classList.add('on');
+        return;
       }
 
-      S.recStep = step;
+      S.recData.name = name;
 
-      renderRecSteps();
+      S.recData.location =
+          document.getElementById('rec-location')
+              .value.trim();
+
+      S.recData.phone =
+          document.getElementById('rec-phone')
+              .value.trim();
     }
-    function buildRecPreview() {
 
-      const cat =
-        DATA.categories.find(c => c.id === S.recData.cat);
+    if (S.recStep === 2) {
 
-      const preview =
-        document.getElementById('rec-preview');
+      const story =
+          document.getElementById('rec-story')
+              .value.trim();
 
-      if (!preview) return;
+      if (story.length < 20) {
 
-      preview.innerHTML =
+        toast(
+            'Please share a story (at least 20 characters)',
+            'error'
+        );
 
-        '<div style="display:flex;gap:10px;align-items:flex-start">' +
+        return;
+      }
 
-        '<span style="font-size:28px">' +
+      if (!S.recData.stars) {
 
-        '<i class="' +
-        (cat ? cat.icon : 'fa-solid fa-store') +
-        '"></i>' +
+        toast(
+            'Please rate your experience',
+            'error'
+        );
 
-        '</span>' +
+        return;
+      }
 
-        '<div style="flex:1">' +
+      S.recData.story = story;
 
-        '<div style="font-family:var(--font-display);font-size:16px;font-weight:700;margin-bottom:4px">' +
-
-        S.recData.name +
-
-        '</div>' +
-
-        '<div style="font-size:12px;color:var(--text-muted);margin-bottom:10px">' +
-
-        (S.recData.location || 'Location not specified') +
-
-        ' · ' +
-
-        '★'.repeat(S.recData.stars) +
-
-        '</div>' +
-
-        '<p style="font-family:var(--font-display);font-size:14px;font-style:italic;color:var(--text-secondary);line-height:1.65">"' +
-
-        S.recData.story +
-
-        '"</p>' +
-
-        '<div style="margin-top:10px;font-size:12px;color:var(--text-muted)">' +
-
-        '— ' + S.user.name + ', your neighbour' +
-
-        '</div>' +
-
-        '</div>' +
-
-        '</div>';
+      buildRecPreview();
     }
+  }
+
+  document.querySelectorAll('.rec-step-content')
+      .forEach(c => c.classList.remove('on'));
+
+  const target =
+      document.getElementById('rs-' + step);
+
+  if (target) {
+
+    target.classList.add('on');
+  }
+
+  S.recStep = step;
+
+  renderRecSteps();
+}
+function buildRecPreview() {
+
+  const cat =
+      DATA.categories.find(c => c.id === S.recData.cat);
+
+  const preview =
+      document.getElementById('rec-preview');
+
+  if (!preview) return;
+
+  preview.innerHTML =
+
+      '<div style="display:flex;gap:10px;align-items:flex-start">' +
+
+      '<span style="font-size:28px">' +
+
+      '<i class="' +
+      (cat ? cat.icon : 'fa-solid fa-store') +
+      '"></i>' +
+
+      '</span>' +
+
+      '<div style="flex:1">' +
+
+      '<div style="font-family:var(--font-display);font-size:16px;font-weight:700;margin-bottom:4px">' +
+
+      S.recData.name +
+
+      '</div>' +
+
+      '<div style="font-size:12px;color:var(--text-muted);margin-bottom:10px">' +
+
+      (S.recData.location || 'Location not specified') +
+
+      ' · ' +
+
+      '★'.repeat(S.recData.stars) +
+
+      '</div>' +
+
+      '<p style="font-family:var(--font-display);font-size:14px;font-style:italic;color:var(--text-secondary);line-height:1.65">"' +
+
+      S.recData.story +
+
+      '"</p>' +
+
+      '<div style="margin-top:10px;font-size:12px;color:var(--text-muted)">' +
+
+      '— ' + S.user.name + ', your neighbour' +
+
+      '</div>' +
+
+      '</div>' +
+
+      '</div>';
+}
 
 async function submitRecommendation() {
 
@@ -1293,352 +1136,352 @@ async function submitRecommendation() {
   }
 }
 
-    /* ─────────────────────────────────────────────
-   VOUCH
+/* ─────────────────────────────────────────────
+VOUCH
 ───────────────────────────────────────────── */
 
-    function openVouch(vendorId) {
+function openVouch(vendorId) {
 
-      if (!S.user) {
+  if (!S.user) {
 
-        openModal('m-auth');
+    openModal('m-auth');
 
-        return;
-      }
+    return;
+  }
 
-      S.vouchVendorId = vendorId;
+  S.vouchVendorId = vendorId;
 
-      const v =
-          backendVendors.find(x => x.id == vendorId);
+  const v =
+      backendVendors.find(x => x.id == vendorId);
 
-      document.getElementById('vouch-vendor-name').textContent =
-        v
+  document.getElementById('vouch-vendor-name').textContent =
+      v
           ? 'Vouching for: ' + v.name
           : 'Vouch';
 
-      document.getElementById('vouch-note').value = '';
+  document.getElementById('vouch-note').value = '';
 
-      document.getElementById('vouch-anon').checked = false;
+  document.getElementById('vouch-anon').checked = false;
 
-      openModal('m-vouch');
+  openModal('m-vouch');
+}
+
+function submitVouch() {
+
+  const v =
+      backendVendors.find(x => x.id == S.vouchVendorId);
+
+  if (v) {
+
+    v.vouches++;
+
+    v.trustScore = Math.min(
+        100,
+        v.trustScore + 2
+    );
+  }
+
+  if (S.user) {
+
+    S.user.vouches =
+        (S.user.vouches || 0) + 1;
+
+    S.user.score =
+        (S.user.score || 0) + 8;
+  }
+
+  const anon =
+      document.getElementById('vouch-anon').checked;
+
+  DATA.activity.unshift({
+
+    user: anon ? 'Anonymous' : S.user.name,
+
+    col: S.user.color,
+
+    action: 'vouched for',
+
+    biz: v ? v.name : 'a business',
+
+    time: 'Just now'
+  });
+
+  closeModal('m-vouch');
+
+  toast(
+      'Vouch added! You\'ve strengthened your community\'s trust network.',
+      'success'
+  );
+
+  if (S.page === 'profile') {
+
+    renderVendorProfile(S.vendorId);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   REPORT
+───────────────────────────────────────────── */
+
+function pickReport(el, reason) {
+
+  S.reportReason = reason;
+
+  document.querySelectorAll('#report-opts .cat-sel')
+      .forEach(c => c.classList.remove('on'));
+
+  el.classList.add('on');
+}
+
+function submitReport() {
+
+  if (!S.reportReason) {
+
+    toast(
+        'Please select a reason',
+        'error'
+    );
+
+    return;
+  }
+
+  document.getElementById('report-note').value = '';
+
+  S.reportReason = '';
+
+  document.querySelectorAll('#report-opts .cat-sel')
+      .forEach(c => c.classList.remove('on'));
+
+  closeModal('m-report');
+
+  toast(
+      'Report submitted. Our trust team will review it within 24 hours.',
+      'success'
+  );
+}
+
+/* ─────────────────────────────────────────────
+   FAVOURITES & RECENTLY VIEWED
+───────────────────────────────────────────── */
+
+function toggleFav(id, el) {
+
+  if (!S.user) {
+
+    openModal('m-auth');
+
+    return;
+  }
+
+  if (S.favs.has(id)) {
+
+    S.favs.delete(id);
+
+    if (el) {
+
+      el.innerHTML =
+          '<i class="fa-regular fa-heart"></i>';
+
+      el.classList.remove('on');
     }
 
-    function submitVouch() {
+    toast(
+        'Removed from saved',
+        'info'
+    );
 
-      const v =
-          backendVendors.find(x => x.id == S.vouchVendorId);
+  } else {
 
-      if (v) {
+    S.favs.add(id);
 
-        v.vouches++;
+    if (el) {
 
-        v.trustScore = Math.min(
-          100,
-          v.trustScore + 2
-        );
-      }
-
-      if (S.user) {
-
-        S.user.vouches =
-          (S.user.vouches || 0) + 1;
-
-        S.user.score =
-          (S.user.score || 0) + 8;
-      }
-
-      const anon =
-        document.getElementById('vouch-anon').checked;
-
-      DATA.activity.unshift({
-
-        user: anon ? 'Anonymous' : S.user.name,
-
-        col: S.user.color,
-
-        action: 'vouched for',
-
-        biz: v ? v.name : 'a business',
-
-        time: 'Just now'
-      });
-
-      closeModal('m-vouch');
-
-      toast(
-        'Vouch added! You\'ve strengthened your community\'s trust network.',
-        'success'
-      );
-
-      if (S.page === 'profile') {
-
-        renderVendorProfile(S.vendorId);
-      }
-    }
-
-    /* ─────────────────────────────────────────────
-       REPORT
-    ───────────────────────────────────────────── */
-
-    function pickReport(el, reason) {
-
-      S.reportReason = reason;
-
-      document.querySelectorAll('#report-opts .cat-sel')
-        .forEach(c => c.classList.remove('on'));
+      el.innerHTML =
+          '<i class="fa-solid fa-heart"></i>';
 
       el.classList.add('on');
     }
 
-    function submitReport() {
-
-      if (!S.reportReason) {
-
-        toast(
-          'Please select a reason',
-          'error'
-        );
-
-        return;
-      }
-
-      document.getElementById('report-note').value = '';
-
-      S.reportReason = '';
-
-      document.querySelectorAll('#report-opts .cat-sel')
-        .forEach(c => c.classList.remove('on'));
-
-      closeModal('m-report');
-
-      toast(
-        'Report submitted. Our trust team will review it within 24 hours.',
+    toast(
+        'Saved',
         'success'
-      );
-    }
+    );
+  }
 
-    /* ─────────────────────────────────────────────
-       FAVOURITES & RECENTLY VIEWED
-    ───────────────────────────────────────────── */
+  localStorage.setItem(
+      'll4_favs',
+      JSON.stringify([...S.favs])
+  );
+}
 
-    function toggleFav(id, el) {
+function addRV(id) {
 
-      if (!S.user) {
+  S.rv = [
+    id,
+    ...S.rv.filter(x => x !== id)
+  ].slice(0, 8);
 
-        openModal('m-auth');
+  localStorage.setItem(
+      'll4_rv',
+      JSON.stringify(S.rv)
+  );
+}
 
-        return;
-      }
+function clearRV() {
 
-      if (S.favs.has(id)) {
+  S.rv = [];
 
-        S.favs.delete(id);
+  localStorage.setItem(
+      'll4_rv',
+      '[]'
+  );
 
-        if (el) {
+  renderRV();
+}
 
-          el.innerHTML =
-            '<i class="fa-regular fa-heart"></i>';
+/* ─────────────────────────────────────────────
+   TRUST RING SVG
+───────────────────────────────────────────── */
 
-          el.classList.remove('on');
-        }
+function trustRingHTML(score) {
 
-        toast(
-          'Removed from saved',
-          'info'
-        );
+  const r = 34;
 
-      } else {
+  const c = 2 * Math.PI * r;
 
-        S.favs.add(id);
+  const dash = (score / 100) * c;
 
-        if (el) {
+  return (
+      '<div class="trust-ring">' +
 
-          el.innerHTML =
-            '<i class="fa-solid fa-heart"></i>';
+      '<svg viewBox="0 0 80 80" width="80" height="80">' +
 
-          el.classList.add('on');
-        }
+      '<circle class="tr-track" cx="40" cy="40" r="' + r + '"/>' +
 
-        toast(
-          'Saved',
-          'success'
-        );
-      }
+      '<circle class="tr-fill" cx="40" cy="40" r="' + r +
+      '" stroke-dasharray="' + dash + ' ' + c + '"/>' +
 
-      localStorage.setItem(
-        'll4_favs',
-        JSON.stringify([...S.favs])
-      );
-    }
+      '</svg>' +
 
-    function addRV(id) {
+      '<div class="tr-text">' +
 
-      S.rv = [
-        id,
-        ...S.rv.filter(x => x !== id)
-      ].slice(0, 8);
+      '<div class="tr-num">' + score + '</div>' +
 
-      localStorage.setItem(
-        'll4_rv',
-        JSON.stringify(S.rv)
-      );
-    }
+      '<div class="tr-lbl">TRUST</div>' +
 
-    function clearRV() {
+      '</div>' +
 
-      S.rv = [];
+      '</div>'
+  );
+}
+/* ─────────────────────────────────────────────
+HOME PAGE RENDER — V1 style with V3 data
+───────────────────────────────────────────── */
 
-      localStorage.setItem(
-        'll4_rv',
-        '[]'
-      );
+function renderHome() {
 
-      renderRV();
-    }
+  renderHeroMap();
 
-    /* ─────────────────────────────────────────────
-       TRUST RING SVG
-    ───────────────────────────────────────────── */
+  renderTrendingStrip();
 
-    function trustRingHTML(score) {
+  renderHomeRecGrid();
 
-      const r = 34;
+  renderHowItWorks();
 
-      const c = 2 * Math.PI * r;
+  renderCatGridHome();
 
-      const dash = (score / 100) * c;
+  renderRV();
+}
 
-      return (
-        '<div class="trust-ring">' +
+function renderHeroMap() {
 
-        '<svg viewBox="0 0 80 80" width="80" height="80">' +
+  const map =
+      document.getElementById('hero-mini-map');
 
-        '<circle class="tr-track" cx="40" cy="40" r="' + r + '"/>' +
+  if (!map) return;
 
-        '<circle class="tr-fill" cx="40" cy="40" r="' + r +
-        '" stroke-dasharray="' + dash + ' ' + c + '"/>' +
+  const roads = [
 
-        '</svg>' +
+    {
+      left: '30%',
+      top: '0',
+      width: '4px',
+      height: '100%'
+    },
 
-        '<div class="tr-text">' +
+    {
+      left: '65%',
+      top: '0',
+      width: '4px',
+      height: '100%'
+    },
 
-        '<div class="tr-num">' + score + '</div>' +
+    {
+      top: '40%',
+      left: '0',
+      width: '100%',
+      height: '4px'
+    },
 
-        '<div class="tr-lbl">TRUST</div>' +
+    {
+      top: '70%',
+      left: '0',
+      width: '100%',
+      height: '4px'
+    },
+
+  ];
+
+  const pins = backendVendors.slice(0,4).map((v, i) => {
+
+    const positions = [
+
+      { left: '18%', top: '25%' },
+
+      { left: '55%', top: '15%' },
+
+      { left: '75%', top: '55%' },
+
+      { left: '35%', top: '60%' }
+
+    ];
+
+    const pos = positions[i];
+
+    return (
+
+        '<div class="map-pin-item" style="left:' +
+        pos.left +
+        ';top:' +
+        pos.top +
+        '" onclick="goProfile(' +
+        v.id +
+        ')">' +
+
+        '<div class="map-pin-dot" style="background:var(--saffron)">' +
+
+        '<span class="map-pin-emoji">' +
+
+        '<i class="' + v.icon + '"></i>' +
+
+        '</span>' +
 
         '</div>' +
 
+        '<span class="map-pin-label">' +
+
+        v.name.split(' ')[0] +
+
+        '</span>' +
+
         '</div>'
-      );
-    }
-    /* ─────────────────────────────────────────────
-   HOME PAGE RENDER — V1 style with V3 data
-───────────────────────────────────────────── */
+    );
 
-    function renderHome() {
+  });
 
-      renderHeroMap();
+  map.innerHTML =
 
-      renderTrendingStrip();
-
-      renderHomeRecGrid();
-
-      renderHowItWorks();
-
-      renderCatGridHome();
-
-      renderRV();
-    }
-
-    function renderHeroMap() {
-
-      const map =
-        document.getElementById('hero-mini-map');
-
-      if (!map) return;
-
-      const roads = [
-
-        {
-          left: '30%',
-          top: '0',
-          width: '4px',
-          height: '100%'
-        },
-
-        {
-          left: '65%',
-          top: '0',
-          width: '4px',
-          height: '100%'
-        },
-
-        {
-          top: '40%',
-          left: '0',
-          width: '100%',
-          height: '4px'
-        },
-
-        {
-          top: '70%',
-          left: '0',
-          width: '100%',
-          height: '4px'
-        },
-
-      ];
-
-      const pins = backendVendors.slice(0,4).map((v, i) => {
-
-        const positions = [
-
-          { left: '18%', top: '25%' },
-
-          { left: '55%', top: '15%' },
-
-          { left: '75%', top: '55%' },
-
-          { left: '35%', top: '60%' }
-
-        ];
-
-        const pos = positions[i];
-
-        return (
-
-          '<div class="map-pin-item" style="left:' +
-          pos.left +
-          ';top:' +
-          pos.top +
-          '" onclick="goProfile(' +
-          v.id +
-          ')">' +
-
-          '<div class="map-pin-dot" style="background:var(--saffron)">' +
-
-          '<span class="map-pin-emoji">' +
-
-          '<i class="' + v.icon + '"></i>' +
-
-          '</span>' +
-
-          '</div>' +
-
-          '<span class="map-pin-label">' +
-
-          v.name.split(' ')[0] +
-
-          '</span>' +
-
-          '</div>'
-        );
-
-      });
-
-      map.innerHTML =
-
-        roads.map(r =>
+      roads.map(r =>
 
           '<div class="mini-map-road" style="left:' +
           r.left +
@@ -1650,45 +1493,45 @@ async function submitRecommendation() {
           r.height +
           '"></div>'
 
-        ).join('') +
+      ).join('') +
 
-        pins.join('');
+      pins.join('');
 
-      const scroll =
-        document.getElementById('hero-vendor-scroll');
+  const scroll =
+      document.getElementById('hero-vendor-scroll');
 
-      if (!scroll) return;
+  if (!scroll) return;
 
-      scroll.innerHTML = backendVendors.slice(0,4).map(v =>
+  scroll.innerHTML = backendVendors.slice(0,4).map(v =>
 
-        '<div class="vendor-mini-chip" onclick="goProfile(' +
-        v.id +
-        ')">' +
+      '<div class="vendor-mini-chip" onclick="goProfile(' +
+      v.id +
+      ')">' +
 
-        (v.open
+      (v.open
           ? '<i class="fa-solid fa-circle" style="color:#1E6645;font-size:10px"></i>'
           : '<i class="fa-solid fa-circle" style="color:#C0392B;font-size:10px"></i>') +
 
-        ' <i class="' + v.icon + '"></i> ' +
+      ' <i class="' + v.icon + '"></i> ' +
 
-        v.name.split(' ')[0] +
+      v.name.split(' ')[0] +
 
-        '\'s</div>'
+      '\'s</div>'
 
-      ).join('');
-    }
+  ).join('');
+}
 
-    function renderTrendingStrip() {
+function renderTrendingStrip() {
 
-      const el =
-        document.getElementById('trending-strip');
+  const el =
+      document.getElementById('trending-strip');
 
-      if (!el) return;
+  if (!el) return;
 
-      el.innerHTML =
+  el.innerHTML =
 
-          backendVendors
-              .filter(v => v.trending === true).map(v =>
+      backendVendors
+          .filter(v => v.trending === true).map(v =>
 
           '<div class="trend-pill hot" onclick="goProfile(' +
           v.id +
@@ -1727,10 +1570,10 @@ async function submitRecommendation() {
 
           '</div>'
 
-        ).join('') +
+      ).join('') +
 
-          backendVendors
-              .filter(v => !v.trending).map(v =>
+      backendVendors
+          .filter(v => !v.trending).map(v =>
 
           '<div class="trend-pill" onclick="goProfile(' +
           v.id +
@@ -1762,205 +1605,205 @@ async function submitRecommendation() {
 
           '</div>'
 
-        ).join('');
-    }
-
-    function renderHomeRecGrid() {
-
-      const el =
-        document.getElementById('home-rec-grid');
-
-      if (!el) return;
-
-      el.innerHTML = backendVendors
-        .slice(0, 6)
-        .map(v => storyCardHTML(v))
-        .join('');
-    }
-
-    function storyCardHTML(v) {
-
-      const fav = S.favs.has(v.id);
-
-      return (
-
-        '<div class="story-card" onclick="goProfile(' +
-        v.id +
-        ')">' +
-
-        '<div class="sc-emoji-band" style="background:' +
-        v.color +
-        '">' +
-
-        '<div class="sc-fav ' +
-        (fav ? 'on' : '') +
-        '" onclick="event.stopPropagation();toggleFav(' +
-        v.id +
-        ',this)">' +
-
-        (
-          fav
-            ? '<i class="fa-solid fa-heart"></i>'
-            : '<i class="fa-regular fa-heart"></i>'
-        ) +
-
-        '</div>' +
-
-        '<span style="font-size:40px">' +
-
-        '<i class="' + v.icon + '"></i>' +
-
-        '</span>' +
-
-        '<div class="sc-trust-ring">' +
-
-        v.trustScore +
-
-        '</div>' +
-
-        '</div>' +
-
-        '<div class="sc-body">' +
-
-        '<div class="sc-meta">' +
-
-        '<span class="badge ' +
-        (v.open ? 'b-sage' : 'b-rust') +
-        '">' +
-
-        (v.open ? 'Open' : 'Closed') +
-
-        '</span>' +
-
-        (
-          v.verified
-            ? '<span class="badge b-cobalt">✓ Verified</span>'
-            : ''
-        ) +
-
-        '<span class="badge b-ink">' +
-
-        v.distance +
-
-        'm</span>' +
-
-        '</div>' +
-
-        '<div class="sc-name">' +
-
-        v.name +
-
-        '</div>' +
-
-        '<p class="sc-story">' +
-
-        v.topStory +
-
-        '</p>' +
-
-        '<div class="sc-footer">' +
-
-        '<div class="sc-by">' +
-
-        '<div class="sc-by-av" style="background:' +
-        DATA.activity[0].col +
-        '">' +
-
-        v.topStoryBy[0] +
-
-        '</div>' +
-
-        v.topStoryBy.split(',')[0] +
-
-        '</div>' +
-
-        '<div class="sc-vouches">' +
-
-        '<i class="fa-solid fa-house-user"></i> ' +
-
-        v.vouches +
-
-        '</div>' +
-
-        '</div>' +
-
-        '</div>' +
-
-        '</div>'
-      );
-    }
-
-    function renderHowItWorks() {
-
-      const el =
-        document.getElementById('how-it-works');
-
-      if (!el) return;
-
-      const steps = [
-
-        {
-          n: '01',
-          icon: 'fa-solid fa-bullhorn',
-          title: 'Someone recommends',
-          desc: 'A neighbour shares their honest story about a local business they genuinely trust.'
-        },
-
-        {
-          n: '02',
-          icon: 'fa-solid fa-house-user',
-          title: 'Community vouches',
-          desc: 'Others who know the business add their vouches. Trust grows organically through real people.'
-        },
-
-        {
-          n: '03',
-          icon: 'fa-solid fa-sparkles',
-          title: 'Trust score rises',
-          desc: 'Businesses emerge naturally based on community support — not paid listings or ads.'
-        },
-
-        {
-          n: '04',
-          icon: 'fa-solid fa-magnifying-glass',
-          title: 'You discover with confidence',
-          desc: 'Find the tailor, tiffin, tutor — through people who actually live in your neighbourhood.'
-        },
-
-      ];
-
-      el.innerHTML = steps.map(s =>
-
-        '<div style="border:1px solid var(--h-border-color);border-radius:var(--radius);padding:1.5rem">' +
-
-        '<div style="font-size:26px;margin-bottom:.75rem">' +
-
-        '<i class="' + s.icon + '"></i>' +
-
-        '</div>' +
-
-        '<div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:var(--how-num-color);line-height:1;margin-bottom:.5rem">' +
-
-        s.n +
-
-        '</div>' +
-
-        '<div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--cream);margin-bottom:.5rem">' +
-
-        s.title +
-
-        '</div>' +
-
-        '<p style="font-size:13.5px;color:var(--how-p);line-height:1.65">' +
-
-        s.desc +
-
-        '</p>' +
-
-        '</div>'
-
       ).join('');
-    }
+}
+
+function renderHomeRecGrid() {
+
+  const el =
+      document.getElementById('home-rec-grid');
+
+  if (!el) return;
+
+  el.innerHTML = backendVendors
+      .slice(0, 6)
+      .map(v => storyCardHTML(v))
+      .join('');
+}
+
+function storyCardHTML(v) {
+
+  const fav = S.favs.has(v.id);
+
+  return (
+
+      '<div class="story-card" onclick="goProfile(' +
+      v.id +
+      ')">' +
+
+      '<div class="sc-emoji-band" style="background:' +
+      v.color +
+      '">' +
+
+      '<div class="sc-fav ' +
+      (fav ? 'on' : '') +
+      '" onclick="event.stopPropagation();toggleFav(' +
+      v.id +
+      ',this)">' +
+
+      (
+          fav
+              ? '<i class="fa-solid fa-heart"></i>'
+              : '<i class="fa-regular fa-heart"></i>'
+      ) +
+
+      '</div>' +
+
+      '<span style="font-size:40px">' +
+
+      '<i class="' + v.icon + '"></i>' +
+
+      '</span>' +
+
+      '<div class="sc-trust-ring">' +
+
+      v.trustScore +
+
+      '</div>' +
+
+      '</div>' +
+
+      '<div class="sc-body">' +
+
+      '<div class="sc-meta">' +
+
+      '<span class="badge ' +
+      (v.open ? 'b-sage' : 'b-rust') +
+      '">' +
+
+      (v.open ? 'Open' : 'Closed') +
+
+      '</span>' +
+
+      (
+          v.verified
+              ? '<span class="badge b-cobalt">✓ Verified</span>'
+              : ''
+      ) +
+
+      '<span class="badge b-ink">' +
+
+      v.distance +
+
+      'm</span>' +
+
+      '</div>' +
+
+      '<div class="sc-name">' +
+
+      v.name +
+
+      '</div>' +
+
+      '<p class="sc-story">' +
+
+      v.topStory +
+
+      '</p>' +
+
+      '<div class="sc-footer">' +
+
+      '<div class="sc-by">' +
+
+      '<div class="sc-by-av" style="background:' +
+      DATA.activity[0].col +
+      '">' +
+
+      v.topStoryBy[0] +
+
+      '</div>' +
+
+      v.topStoryBy.split(',')[0] +
+
+      '</div>' +
+
+      '<div class="sc-vouches">' +
+
+      '<i class="fa-solid fa-house-user"></i> ' +
+
+      v.vouches +
+
+      '</div>' +
+
+      '</div>' +
+
+      '</div>' +
+
+      '</div>'
+  );
+}
+
+function renderHowItWorks() {
+
+  const el =
+      document.getElementById('how-it-works');
+
+  if (!el) return;
+
+  const steps = [
+
+    {
+      n: '01',
+      icon: 'fa-solid fa-bullhorn',
+      title: 'Someone recommends',
+      desc: 'A neighbour shares their honest story about a local business they genuinely trust.'
+    },
+
+    {
+      n: '02',
+      icon: 'fa-solid fa-house-user',
+      title: 'Community vouches',
+      desc: 'Others who know the business add their vouches. Trust grows organically through real people.'
+    },
+
+    {
+      n: '03',
+      icon: 'fa-solid fa-sparkles',
+      title: 'Trust score rises',
+      desc: 'Businesses emerge naturally based on community support — not paid listings or ads.'
+    },
+
+    {
+      n: '04',
+      icon: 'fa-solid fa-magnifying-glass',
+      title: 'You discover with confidence',
+      desc: 'Find the tailor, tiffin, tutor — through people who actually live in your neighbourhood.'
+    },
+
+  ];
+
+  el.innerHTML = steps.map(s =>
+
+      '<div style="border:1px solid var(--h-border-color);border-radius:var(--radius);padding:1.5rem">' +
+
+      '<div style="font-size:26px;margin-bottom:.75rem">' +
+
+      '<i class="' + s.icon + '"></i>' +
+
+      '</div>' +
+
+      '<div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:var(--how-num-color);line-height:1;margin-bottom:.5rem">' +
+
+      s.n +
+
+      '</div>' +
+
+      '<div style="font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--cream);margin-bottom:.5rem">' +
+
+      s.title +
+
+      '</div>' +
+
+      '<p style="font-size:13.5px;color:var(--how-p);line-height:1.65">' +
+
+      s.desc +
+
+      '</p>' +
+
+      '</div>'
+
+  ).join('');
+}
 
 function renderCatGridHome() {
 
@@ -2001,137 +1844,137 @@ function renderCatGridHome() {
   }).join('');
 }
 
-    function renderRV() {
+function renderRV() {
 
-      const sec =
-        document.getElementById('rv-section');
+  const sec =
+      document.getElementById('rv-section');
 
-      const list =
-        document.getElementById('rv-list');
+  const list =
+      document.getElementById('rv-list');
 
-      if (!sec || !list) return;
+  if (!sec || !list) return;
 
-      if (!S.rv.length) {
+  if (!S.rv.length) {
 
-        sec.style.display = 'none';
+    sec.style.display = 'none';
 
-        return;
-      }
+    return;
+  }
 
-      sec.style.display = 'block';
+  sec.style.display = 'block';
 
-      list.innerHTML = S.rv.slice(0, 5).map(id => {
+  list.innerHTML = S.rv.slice(0, 5).map(id => {
 
-        const v =
-            backendVendors.find(x => x.id == id);
+    const v =
+        backendVendors.find(x => x.id == id);
 
-        if (!v) return '';
+    if (!v) return '';
 
-        return (
+    return (
 
-          '<div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="goProfile(' +
-          v.id +
-          ')">' +
+        '<div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="goProfile(' +
+        v.id +
+        ')">' +
 
-          '<span style="font-size:20px">' +
+        '<span style="font-size:20px">' +
 
-          '<i class="' + v.icon + '"></i>' +
-
-          '</span>' +
-
-          '<div style="flex:1">' +
-
-          '<div style="font-weight:600;font-size:13px">' +
-
-          v.name +
-
-          '</div>' +
-
-          '<div style="font-size:12px;color:var(--text-muted)">' +
-
-          v.cat +
-
-          ' · Trust ' +
-
-          v.trustScore +
-
-          '</div>' +
-
-          '</div>' +
-
-          '<span class="badge ' +
-          (v.open ? 'b-sage' : 'b-rust') +
-          '">' +
-
-          (v.open ? 'Open' : 'Closed') +
-
-          '</span>' +
-
-          '</div>'
-        );
-
-      }).join('');
-    }
-    /* ─────────────────────────────────────────────
-   HERO SEARCH
-───────────────────────────────────────────── */
-
-    function heroSearchInput(val) {
-
-      // Visual feedback — could expand with live suggestions
-    }
-
-    function doHeroSearch() {
-
-      const q =
-        document.getElementById('hero-search-input')
-          .value.trim();
-
-      if (!q) return;
-
-      S.feedFilter.q = q;
-
-      go('feed');
-    }
-
-    function goFeedCat(cat) {
-
-      S.feedFilter.cat = cat;
-
-      go('feed');
-    }
-
-    /* ─────────────────────────────────────────────
-       FEED PAGE
-    ───────────────────────────────────────────── */
-
-    function renderFeed() {
-
-      renderFeedCatChips();
-
-      applyFeedFilters();
-
-      renderFeedRight();
-    }
-
-    function renderFeedCatChips() {
-
-      const el =
-        document.getElementById('feed-cat-chips');
-
-      if (!el) return;
-
-      el.innerHTML =
-
-        '<span class="chip ' +
-        (S.feedFilter.cat === 'all' ? 'on' : '') +
-        '" onclick="setFeedCat(this,\'all\')">' +
-
-        'All' +
+        '<i class="' + v.icon + '"></i>' +
 
         '</span>' +
 
-        DATA.categories.map(c =>
+        '<div style="flex:1">' +
+
+        '<div style="font-weight:600;font-size:13px">' +
+
+        v.name +
+
+        '</div>' +
+
+        '<div style="font-size:12px;color:var(--text-muted)">' +
+
+        v.cat +
+
+        ' · Trust ' +
+
+        v.trustScore +
+
+        '</div>' +
+
+        '</div>' +
+
+        '<span class="badge ' +
+        (v.open ? 'b-sage' : 'b-rust') +
+        '">' +
+
+        (v.open ? 'Open' : 'Closed') +
+
+        '</span>' +
+
+        '</div>'
+    );
+
+  }).join('');
+}
+/* ─────────────────────────────────────────────
+HERO SEARCH
+───────────────────────────────────────────── */
+
+function heroSearchInput(val) {
+
+  // Visual feedback — could expand with live suggestions
+}
+
+function doHeroSearch() {
+
+  const q =
+      document.getElementById('hero-search-input')
+          .value.trim();
+
+  if (!q) return;
+
+  S.feedFilter.q = q;
+
+  go('feed');
+}
+
+function goFeedCat(cat) {
+
+  S.feedFilter.cat = cat;
+
+  go('feed');
+}
+
+/* ─────────────────────────────────────────────
+   FEED PAGE
+───────────────────────────────────────────── */
+
+function renderFeed() {
+
+  renderFeedCatChips();
+
+  applyFeedFilters();
+
+  renderFeedRight();
+}
+
+function renderFeedCatChips() {
+
+  const el =
+      document.getElementById('feed-cat-chips');
+
+  if (!el) return;
+
+  el.innerHTML =
+
+      '<span class="chip ' +
+      (S.feedFilter.cat === 'all' ? 'on' : '') +
+      '" onclick="setFeedCat(this,\'all\')">' +
+
+      'All' +
+
+      '</span>' +
+
+      DATA.categories.map(c =>
 
           '<span class="chip ' +
           (S.feedFilter.cat === c.id ? 'on' : '') +
@@ -2145,135 +1988,135 @@ function renderCatGridHome() {
 
           '</span>'
 
-        ).join('');
-    }
+      ).join('');
+}
 
-    function setFeedCat(el, cat) {
+function setFeedCat(el, cat) {
 
-      S.feedFilter.cat = cat;
+  S.feedFilter.cat = cat;
 
-      document.querySelectorAll('#feed-cat-chips .chip')
-        .forEach(c => c.classList.remove('on'));
+  document.querySelectorAll('#feed-cat-chips .chip')
+      .forEach(c => c.classList.remove('on'));
 
-      el.classList.add('on');
+  el.classList.add('on');
 
-      applyFeedFilters();
-    }
+  applyFeedFilters();
+}
 
-    function filterTrust(el, v) {
+function filterTrust(el, v) {
 
-      S.feedFilter.trust = v;
+  S.feedFilter.trust = v;
 
-      document.querySelectorAll('[data-trust]')
-        .forEach(c => c.classList.remove('on'));
+  document.querySelectorAll('[data-trust]')
+      .forEach(c => c.classList.remove('on'));
 
-      el.classList.add('on');
+  el.classList.add('on');
 
-      applyFeedFilters();
-    }
+  applyFeedFilters();
+}
 
-    function filterStatus(el, v) {
+function filterStatus(el, v) {
 
-      S.feedFilter.status = v;
+  S.feedFilter.status = v;
 
-      document.querySelectorAll('[data-status]')
-        .forEach(c => c.classList.remove('on'));
+  document.querySelectorAll('[data-status]')
+      .forEach(c => c.classList.remove('on'));
 
-      el.classList.add('on');
+  el.classList.add('on');
 
-      applyFeedFilters();
-    }
+  applyFeedFilters();
+}
 
-    function feedSearch(q) {
+function feedSearch(q) {
 
-      S.feedFilter.q = q;
+  S.feedFilter.q = q;
 
-      applyFeedFilters();
-    }
+  applyFeedFilters();
+}
 
-    function sortFeed(v) {
+function sortFeed(v) {
 
-      S.feedFilter.sort = v;
+  S.feedFilter.sort = v;
 
-      applyFeedFilters();
-    }
+  applyFeedFilters();
+}
 
-    function applyFeedFilters() {
+function applyFeedFilters() {
 
-      let list = [...backendVendors];
+  let list = [...backendVendors];
 
-      const {
-        cat,
-        trust,
-        status,
-        q,
-        sort
-      } = S.feedFilter;
+  const {
+    cat,
+    trust,
+    status,
+    q,
+    sort
+  } = S.feedFilter;
 
-      if (cat !== 'all') {
+  if (cat !== 'all') {
 
-        list = list.filter(v =>
-            (v.cat || v.category) === cat
-        );
-      }
+    list = list.filter(v =>
+        (v.cat || v.category) === cat
+    );
+  }
 
-      if (trust === 'high') {
+  if (trust === 'high') {
 
-        list = list.filter(v => v.trustScore >= 85);
-      }
+    list = list.filter(v => v.trustScore >= 85);
+  }
 
-      if (trust === 'verified') {
+  if (trust === 'verified') {
 
-        list = list.filter(v => v.verified);
-      }
+    list = list.filter(v => v.verified);
+  }
 
-      if (status === 'open') {
+  if (status === 'open') {
 
-        list = list.filter(v => v.open);
-      }
+    list = list.filter(v => v.open);
+  }
 
-      if (q) {
+  if (q) {
 
-        list = list.filter(v =>
+    list = list.filter(v =>
 
-          v.name.toLowerCase().includes(q.toLowerCase()) ||
+        v.name.toLowerCase().includes(q.toLowerCase()) ||
 
-            (v.cat || '').includes(q.toLowerCase()) ||
+        (v.cat || '').includes(q.toLowerCase()) ||
 
-          (v.topStory || '')
+        (v.topStory || '')
             .toLowerCase()
             .includes(q.toLowerCase())
-        );
-      }
+    );
+  }
 
-      if (sort === 'trust') {
+  if (sort === 'trust') {
 
-        list.sort((a, b) =>
-          b.trustScore - a.trustScore
-        );
-      }
+    list.sort((a, b) =>
+        b.trustScore - a.trustScore
+    );
+  }
 
-      if (sort === 'recent') {
+  if (sort === 'recent') {
 
-        list.sort(() => Math.random() - .5);
-      }
+    list.sort(() => Math.random() - .5);
+  }
 
-      if (sort === 'vouches') {
+  if (sort === 'vouches') {
 
-        list.sort((a, b) =>
-          b.vouches - a.vouches
-        );
-      }
+    list.sort((a, b) =>
+        b.vouches - a.vouches
+    );
+  }
 
-      if (sort === 'distance') {
+  if (sort === 'distance') {
 
-        list.sort((a, b) =>
-          a.distance - b.distance
-        );
-      }
+    list.sort((a, b) =>
+        a.distance - b.distance
+    );
+  }
 
-      renderRecFeed(list);
-    }
+  renderRecFeed(list);
+}
 
 function renderRecFeed(list) {
 
@@ -2407,17 +2250,17 @@ function renderRecFeed(list) {
   }).join('');
 }
 
-    function renderFeedRight() {
+function renderFeedRight() {
 
-      const fp =
-        document.getElementById('fp-trending');
+  const fp =
+      document.getElementById('fp-trending');
 
-      if (fp) {
+  if (fp) {
 
-        fp.innerHTML = backendVendors
-          .filter(v => v.trending)
-          .slice(0, 4)
-          .map(v =>
+    fp.innerHTML = backendVendors
+        .filter(v => v.trending)
+        .slice(0, 4)
+        .map(v =>
 
             '<div class="mini-activity-item" style="cursor:pointer" onclick="goProfile(' +
             v.id +
@@ -2455,63 +2298,63 @@ function renderRecFeed(list) {
 
             '</div>'
 
-          ).join('');
-      }
-
-      const fc =
-        document.getElementById('fp-contributors');
-
-      if (fc) {
-
-        fc.innerHTML = DATA.contributors.map(c =>
-
-          '<div class="top-contributor">' +
-
-          '<div class="mav" style="background:' +
-          c.col +
-          '">' +
-
-          c.name[0] +
-
-          '</div>' +
-
-          '<div>' +
-
-          '<div class="tc-name">' +
-
-          c.name +
-
-          '</div>' +
-
-          '<div style="font-size:11px;color:var(--text-muted)">' +
-
-          c.area +
-
-          '</div>' +
-
-          '</div>' +
-
-          '<div class="tc-count">' +
-
-          c.recs +
-
-          ' recs' +
-
-          '</div>' +
-
-          '</div>'
-
         ).join('');
-      }
+  }
 
-      const fa =
-        document.getElementById('fp-activity');
+  const fc =
+      document.getElementById('fp-contributors');
 
-      if (fa) {
+  if (fc) {
 
-        fa.innerHTML = DATA.activity
-          .slice(0, 5)
-          .map(a =>
+    fc.innerHTML = DATA.contributors.map(c =>
+
+        '<div class="top-contributor">' +
+
+        '<div class="mav" style="background:' +
+        c.col +
+        '">' +
+
+        c.name[0] +
+
+        '</div>' +
+
+        '<div>' +
+
+        '<div class="tc-name">' +
+
+        c.name +
+
+        '</div>' +
+
+        '<div style="font-size:11px;color:var(--text-muted)">' +
+
+        c.area +
+
+        '</div>' +
+
+        '</div>' +
+
+        '<div class="tc-count">' +
+
+        c.recs +
+
+        ' recs' +
+
+        '</div>' +
+
+        '</div>'
+
+    ).join('');
+  }
+
+  const fa =
+      document.getElementById('fp-activity');
+
+  if (fa) {
+
+    fa.innerHTML = DATA.activity
+        .slice(0, 5)
+        .map(a =>
 
             '<div class="mini-activity-item">' +
 
@@ -2549,397 +2392,397 @@ function renderRecFeed(list) {
 
             '</div>'
 
-          ).join('');
-      }
-    }
-    /* ─────────────────────────────────────────────
-       VENDOR PROFILE PAGE
-    ───────────────────────────────────────────── */
+        ).join('');
+  }
+}
+/* ─────────────────────────────────────────────
+   VENDOR PROFILE PAGE
+───────────────────────────────────────────── */
 
-    function renderVendorProfile(id) {
+function renderVendorProfile(id) {
 
-      const v =
-          backendVendors.find(x => x.id == id);
+  const v =
+      backendVendors.find(x => x.id == id);
 
-      if (!v) {
+  if (!v) {
 
-        go('feed');
+    go('feed');
 
-        return;
-      }
+    return;
+  }
 
-      S.vendorId = v.id;
+  S.vendorId = v.id;
 
-      addRV(v.id);
+  addRV(v.id);
 
-      document.getElementById('swa')
-        .classList.add('show');
+  document.getElementById('swa')
+      .classList.add('show');
 
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 
-   const heroBg = isDark
-  ? 'linear-gradient(145deg, #1A0F08 0%, #2C160B 60%, #4A250F 100%)'
-  : 'linear-gradient(145deg, #F8F3EB 0%, #F4EBDD 60%, #F8E1CF 100%)';
+  const heroBg = isDark
+      ? 'linear-gradient(145deg, #1A0F08 0%, #2C160B 60%, #4A250F 100%)'
+      : 'linear-gradient(145deg, #F8F3EB 0%, #F4EBDD 60%, #F8E1CF 100%)';
 
   const glassBtn = isDark
-  ? 'background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.2)'
-  : 'background:rgba(255,255,255,.58);color:#2C1F0F;border:1.5px solid #EDE5D8;backdrop-filter:saturate(1.1) blur(10px)';
+      ? 'background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.2)'
+      : 'background:rgba(255,255,255,.58);color:#2C1F0F;border:1.5px solid #EDE5D8;backdrop-filter:saturate(1.1) blur(10px)';
 
 
-      document.getElementById('vp-hero').style.background = 'none';
+  document.getElementById('vp-hero').style.background = 'none';
 
-requestAnimationFrame(() => {
-  document.getElementById('vp-hero').style.background = heroBg;
-});
+  requestAnimationFrame(() => {
+    document.getElementById('vp-hero').style.background = heroBg;
+  });
 
-      document.getElementById('vp-hero-content').innerHTML =
+  document.getElementById('vp-hero-content').innerHTML =
 
-        '<div class="vp-emoji-lg">' +
+      '<div class="vp-emoji-lg">' +
 
-        '<i class="' + v.icon + '"></i>' +
+      '<i class="' + v.icon + '"></i>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vp-name">' +
+      '<div class="vp-name">' +
 
-        v.name +
+      v.name +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vp-cat">' +
+      '<div class="vp-cat">' +
 
-        '<span>' + v.cat + '</span> · ' +
+      '<span>' + v.cat + '</span> · ' +
 
-        '<span>' +
-        v.address +
-        ', ' +
-        v.city +
-        '</span>' +
+      '<span>' +
+      v.address +
+      ', ' +
+      v.city +
+      '</span>' +
 
-        (
+      (
           v.verified
 
-            ? '<span class="badge b-cobalt" style="background:rgba(26,79,160,.3);color:rgba(255,255,255,.9)">✓ Verified</span>'
+              ? '<span class="badge b-cobalt" style="background:rgba(26,79,160,.3);color:rgba(255,255,255,.9)">✓ Verified</span>'
 
-            : ''
-        ) +
+              : ''
+      ) +
 
-        '<span class="badge ' +
-        (v.open ? 'b-sage' : 'b-rust') +
-        '" style="' +
+      '<span class="badge ' +
+      (v.open ? 'b-sage' : 'b-rust') +
+      '" style="' +
 
-        (
+      (
           v.open
 
-            ? 'background:rgba(30,102,69,.4);color:rgba(200,240,220,.9)'
+              ? 'background:rgba(30,102,69,.4);color:rgba(200,240,220,.9)'
 
-            : 'background:rgba(192,57,43,.4);color:rgba(255,200,180,.9)'
-        ) +
+              : 'background:rgba(192,57,43,.4);color:rgba(255,200,180,.9)'
+      ) +
 
-        '">' +
+      '">' +
 
-        (
+      (
           v.open
 
-            ? '<i class="fa-solid fa-circle" style="color:#8FF0B5;font-size:10px;margin-right:6px;"></i>Open'
+              ? '<i class="fa-solid fa-circle" style="color:#8FF0B5;font-size:10px;margin-right:6px;"></i>Open'
 
-            : '<i class="fa-solid fa-circle" style="color:#FFB4A2;font-size:10px;margin-right:6px;"></i>Closed'
-        ) +
+              : '<i class="fa-solid fa-circle" style="color:#FFB4A2;font-size:10px;margin-right:6px;"></i>Closed'
+      ) +
 
-        '</span>' +
+      '</span>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vp-actions-hero">' +
+      '<div class="vp-actions-hero">' +
 
-        '<button class="btn btn-wa btn-sm" onclick="openWA(' +
-        v.id +
-        ')">' +
+      '<button class="btn btn-wa btn-sm" onclick="openWA(' +
+      v.id +
+      ')">' +
 
-        '<i class="fa-brands fa-whatsapp" style="margin-right:8px;"></i>' +
+      '<i class="fa-brands fa-whatsapp" style="margin-right:8px;"></i>' +
 
-        'WhatsApp' +
+      'WhatsApp' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-sm" style="' + glassBtn + '" onclick="openVouch(' +
-        v.id +
-        ')">' +
+      '<button class="btn btn-sm" style="' + glassBtn + '" onclick="openVouch(' +
+      v.id +
+      ')">' +
 
-        '<i class="fa-solid fa-house-user" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-house-user" style="margin-right:8px;"></i>' +
 
-        'Add Vouch' +
+      'Add Vouch' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-sm" style="' + glassBtn + '" onclick="toggleFav(' +
-        v.id +
-        ')">' +
+      '<button class="btn btn-sm" style="' + glassBtn + '" onclick="toggleFav(' +
+      v.id +
+      ')">' +
 
-        '<i class="fa-solid fa-heart" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-heart" style="margin-right:8px;"></i>' +
 
-        'Save' +
+      'Save' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-sm" style="' + glassBtn + '" onclick="openModal(\'m-report\')">' +
+      '<button class="btn btn-sm" style="' + glassBtn + '" onclick="openModal(\'m-report\')">' +
 
-        '<i class="fa-solid fa-triangle-exclamation"></i>' +
+      '<i class="fa-solid fa-triangle-exclamation"></i>' +
 
-        '</button>' +
+      '</button>' +
 
-        '</div>';
+      '</div>';
 
-      document.getElementById('vp-trust-band').innerHTML =
+  document.getElementById('vp-trust-band').innerHTML =
 
-        trustRingHTML(v.trustScore) +
+      trustRingHTML(v.trustScore) +
 
-        '<div class="vtb-div"></div>' +
+      '<div class="vtb-div"></div>' +
 
-        '<div class="vtb-stat">' +
+      '<div class="vtb-stat">' +
 
-        '<div class="vtb-num">' +
+      '<div class="vtb-num">' +
 
-        v.vouches +
+      v.vouches +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-lbl">' +
+      '<div class="vtb-lbl">' +
 
-        'Neighbour Vouches' +
+      'Neighbour Vouches' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-div"></div>' +
+      '<div class="vtb-div"></div>' +
 
-        '<div class="vtb-stat">' +
+      '<div class="vtb-stat">' +
 
-        '<div class="vtb-num">' +
+      '<div class="vtb-num">' +
 
-        v.recommendations +
+      v.recommendations +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-lbl">' +
+      '<div class="vtb-lbl">' +
 
-        'Recommendations' +
+      'Recommendations' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-div"></div>' +
+      '<div class="vtb-div"></div>' +
 
-        '<div class="vtb-stat">' +
+      '<div class="vtb-stat">' +
 
-        '<div class="vtb-num">' +
+      '<div class="vtb-num">' +
 
-        v.distance + 'm' +
+      v.distance + 'm' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-lbl">' +
+      '<div class="vtb-lbl">' +
 
-        'From You' +
+      'From You' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-div"></div>' +
+      '<div class="vtb-div"></div>' +
 
-        '<div class="vtb-stat">' +
+      '<div class="vtb-stat">' +
 
-        '<div class="vtb-num">' +
+      '<div class="vtb-num">' +
 
-        (v.open ? 'Open' : 'Closed') +
+      (v.open ? 'Open' : 'Closed') +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vtb-lbl">' +
+      '<div class="vtb-lbl">' +
 
-        'Status' +
+      'Status' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">' +
+      '<div style="margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">' +
 
-        (
+      (
 
           !v.claimed
 
-            ? '<button class="btn btn-secondary btn-sm" onclick="toast(\'Claim flow: verify ownership to manage this profile\',\'info\')">' +
+              ? '<button class="btn btn-secondary btn-sm" onclick="toast(\'Claim flow: verify ownership to manage this profile\',\'info\')">' +
 
-            '<i class="fa-solid fa-store" style="margin-right:8px;"></i>' +
+              '<i class="fa-solid fa-store" style="margin-right:8px;"></i>' +
 
-            'Claim Profile' +
+              'Claim Profile' +
 
-            '</button>'
+              '</button>'
 
-            : '<span class="badge b-sage">✓ Claimed</span>'
-        ) +
+              : '<span class="badge b-sage">✓ Claimed</span>'
+      ) +
 
-        '<button class="btn btn-primary btn-sm" onclick="openRecommend()">' +
+      '<button class="btn btn-primary btn-sm" onclick="openRecommend()">' +
 
-        '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
 
-        'Recommend' +
+      'Recommend' +
 
-        '</button>' +
+      '</button>' +
 
-        '</div>';
+      '</div>';
 
-      document.getElementById('vp-body').innerHTML =
+  document.getElementById('vp-body').innerHTML =
 
-        '<div class="vp-main">' +
+      '<div class="vp-main">' +
 
-        '<div class="tab-strip" id="vp-tabs">' +
+      '<div class="tab-strip" id="vp-tabs">' +
 
-        '<button class="tab-b on" onclick="switchVPTab(\'stories\')">' +
+      '<button class="tab-b on" onclick="switchVPTab(\'stories\')">' +
 
-        'Community Stories' +
+      'Community Stories' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="tab-b" onclick="switchVPTab(\'services\')">' +
+      '<button class="tab-b" onclick="switchVPTab(\'services\')">' +
 
-        'Services' +
+      'Services' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="tab-b" onclick="switchVPTab(\'vouches\')">' +
+      '<button class="tab-b" onclick="switchVPTab(\'vouches\')">' +
 
-        'Vouches' +
+      'Vouches' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="tab-b" onclick="switchVPTab(\'info\')">' +
+      '<button class="tab-b" onclick="switchVPTab(\'info\')">' +
 
-        'Info' +
+      'Info' +
 
-        '</button>' +
+      '</button>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="tab-c on" id="vp-stories">' +
+      '<div class="tab-c on" id="vp-stories">' +
 
-        buildVPStories(v) +
+      buildVPStories(v) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="tab-c" id="vp-services">' +
+      '<div class="tab-c" id="vp-services">' +
 
-        buildVPServices(v) +
+      buildVPServices(v) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="tab-c" id="vp-vouches">' +
+      '<div class="tab-c" id="vp-vouches">' +
 
-        buildVPVouches(v) +
+      buildVPVouches(v) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="tab-c" id="vp-info">' +
+      '<div class="tab-c" id="vp-info">' +
 
-        buildVPInfo(v) +
+      buildVPInfo(v) +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="vp-side" id="vp-side">' +
+      '<div class="vp-side" id="vp-side">' +
 
-        buildVPSide(v) +
+      buildVPSide(v) +
 
-        '</div>';
-    }
-    function switchVPTab(tab) {
+      '</div>';
+}
+function switchVPTab(tab) {
 
-      const tabs = [
-        'stories',
-        'services',
-        'vouches',
-        'info'
-      ];
+  const tabs = [
+    'stories',
+    'services',
+    'vouches',
+    'info'
+  ];
 
-      document.querySelectorAll('#vp-tabs .tab-b')
-        .forEach((b, i) =>
+  document.querySelectorAll('#vp-tabs .tab-b')
+      .forEach((b, i) =>
           b.classList.toggle('on', tabs[i] === tab)
-        );
+      );
 
-      document.querySelectorAll('#pg-profile .tab-c')
-        .forEach(c => c.classList.remove('on'));
+  document.querySelectorAll('#pg-profile .tab-c')
+      .forEach(c => c.classList.remove('on'));
 
-      const target =
-        document.getElementById('vp-' + tab);
+  const target =
+      document.getElementById('vp-' + tab);
 
-      if (target) {
+  if (target) {
 
-        target.classList.add('on');
-      }
-    }
+    target.classList.add('on');
+  }
+}
 
-    function buildVPStories(v) {
+function buildVPStories(v) {
 
-      const extra = [
+  const extra = [
 
-        {
-          q: 'I\'d been looking for a good ' +
-            v.cat +
-            ' for months. Found this through a neighbour\'s recommendation and haven\'t looked elsewhere since.',
-          by: 'A local customer',
-          stars: 5
-        },
+    {
+      q: 'I\'d been looking for a good ' +
+          v.cat +
+          ' for months. Found this through a neighbour\'s recommendation and haven\'t looked elsewhere since.',
+      by: 'A local customer',
+      stars: 5
+    },
 
-        {
-          q: 'Honestly the most reliable ' +
-            v.cat +
-            ' in this area. If someone in my family needs it, this is who I send them to.',
-          by: 'Regular customer',
-          stars: 5
-        },
+    {
+      q: 'Honestly the most reliable ' +
+          v.cat +
+          ' in this area. If someone in my family needs it, this is who I send them to.',
+      by: 'Regular customer',
+      stars: 5
+    },
 
-      ];
+  ];
 
-      return (
+  return (
 
-        '<div class="community-story-block">' +
+      '<div class="community-story-block">' +
 
-        '<div class="csb-label">' +
+      '<div class="csb-label">' +
 
-        '<i class="fa-solid fa-star" style="margin-right:6px;"></i>' +
+      '<i class="fa-solid fa-star" style="margin-right:6px;"></i>' +
 
-        'Top Community Story' +
+      'Top Community Story' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="csb-quote">' +
+      '<div class="csb-quote">' +
 
-        '"' + v.topStory + '"' +
+      '"' + v.topStory + '"' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="csb-author">' +
+      '<div class="csb-author">' +
 
-        '<div class="vouch-av" style="background:' +
-        DATA.activity[0].col +
-        ';width:24px;height:24px;font-size:10px">' +
+      '<div class="vouch-av" style="background:' +
+      DATA.activity[0].col +
+      ';width:24px;height:24px;font-size:10px">' +
 
-        v.topStoryBy[0] +
+      v.topStoryBy[0] +
 
-        '</div>' +
+      '</div>' +
 
-        v.topStoryBy +
+      v.topStoryBy +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        extra.map(s =>
+      extra.map(s =>
 
           '<div class="story-tile">' +
 
@@ -2965,50 +2808,50 @@ requestAnimationFrame(() => {
 
           '</div>'
 
-        ).join('') +
+      ).join('') +
 
-        '<button class="btn btn-primary btn-sm" style="margin-top:1rem" onclick="openRecommend()">' +
+      '<button class="btn btn-primary btn-sm" style="margin-top:1rem" onclick="openRecommend()">' +
 
-        '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
 
-        'Add Your Recommendation' +
+      'Add Your Recommendation' +
 
-        '</button>'
-      );
-    }
+      '</button>'
+  );
+}
 
-    function buildVPServices(v) {
+function buildVPServices(v) {
 
-      if (!v.services || !v.services.length) {
+  if (!v.services || !v.services.length) {
 
-        return (
-          '<div class="empty">' +
+    return (
+        '<div class="empty">' +
 
-          '<div class="empty-icon">' +
+        '<div class="empty-icon">' +
 
-          '<i class="fa-solid fa-clipboard-list"></i>' +
-
-          '</div>' +
-
-          '<div class="empty-title">' +
-
-          'No services listed yet' +
-
-          '</div>' +
-
-          '</div>'
-        );
-      }
-
-      return (
-
-        '<div class="section-heading">' +
-
-        'Services & Pricing' +
+        '<i class="fa-solid fa-clipboard-list"></i>' +
 
         '</div>' +
 
-        v.services.map(s =>
+        '<div class="empty-title">' +
+
+        'No services listed yet' +
+
+        '</div>' +
+
+        '</div>'
+    );
+  }
+
+  return (
+
+      '<div class="section-heading">' +
+
+      'Services & Pricing' +
+
+      '</div>' +
+
+      v.services.map(s =>
 
           '<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px">' +
 
@@ -3026,55 +2869,55 @@ requestAnimationFrame(() => {
 
           '</div>'
 
-        ).join('') +
+      ).join('') +
 
-        '<div style="background:var(--saffron-light);border-radius:var(--radius-sm);padding:12px;margin-top:.75rem;font-size:13px;color:var(--earth-mid)">' +
+      '<div style="background:var(--saffron-light);border-radius:var(--radius-sm);padding:12px;margin-top:.75rem;font-size:13px;color:var(--earth-mid)">' +
 
-        '<i class="fa-solid fa-lightbulb" style="margin-right:6px;"></i>' +
+      '<i class="fa-solid fa-lightbulb" style="margin-right:6px;"></i>' +
 
-        'Prices may vary. WhatsApp for custom quotes.' +
+      'Prices may vary. WhatsApp for custom quotes.' +
 
-        '</div>'
-      );
-    }
+      '</div>'
+  );
+}
 
-    function buildVPVouches(v) {
+function buildVPVouches(v) {
 
-      const vouchNames = [
-        'Ananya M.',
-        'Kiran T.',
-        'Deepa S.',
-        'Meera P.',
-        'Rahul V.',
-        'Nisha A.'
-      ];
+  const vouchNames = [
+    'Ananya M.',
+    'Kiran T.',
+    'Deepa S.',
+    'Meera P.',
+    'Rahul V.',
+    'Nisha A.'
+  ];
 
-      const vouchColors = [
-        '#C0392B',
-        '#1A4FA0',
-        '#1E6645',
-        '#D4A017',
-        '#6B4E35',
-        '#C0392B'
-      ];
+  const vouchColors = [
+    '#C0392B',
+    '#1A4FA0',
+    '#1E6645',
+    '#D4A017',
+    '#6B4E35',
+    '#C0392B'
+  ];
 
-      const areas = [
-        '5th Block',
-        'Indiranagar',
-        'Jayanagar',
-        'HSR Layout',
-        'Koramangala',
-        'Sarjapur'
-      ];
+  const areas = [
+    '5th Block',
+    'Indiranagar',
+    'Jayanagar',
+    'HSR Layout',
+    'Koramangala',
+    'Sarjapur'
+  ];
 
-      const shown =
-        Math.min(v.vouches, vouchNames.length);
+  const shown =
+      Math.min(v.vouches, vouchNames.length);
 
-      return (
+  return (
 
-        '<div class="vouch-wall">' +
+      '<div class="vouch-wall">' +
 
-        vouchNames.slice(0, shown).map((name, i) =>
+      vouchNames.slice(0, shown).map((name, i) =>
 
           '<div class="vouch-item">' +
 
@@ -3112,42 +2955,42 @@ requestAnimationFrame(() => {
 
           '</div>'
 
-        ).join('') +
+      ).join('') +
 
-        (
+      (
           v.vouches > shown
 
-            ? '<div style="font-size:12px;color:var(--saffron);font-weight:600;cursor:pointer;padding:8px 0" onclick="toast(\'Showing all ' +
-            v.vouches +
-            ' vouches...\',\'info\')">' +
+              ? '<div style="font-size:12px;color:var(--saffron);font-weight:600;cursor:pointer;padding:8px 0" onclick="toast(\'Showing all ' +
+              v.vouches +
+              ' vouches...\',\'info\')">' +
 
-            '+ ' +
+              '+ ' +
 
-            (v.vouches - shown) +
+              (v.vouches - shown) +
 
-            ' more neighbours →' +
+              ' more neighbours →' +
 
-            '</div>'
+              '</div>'
 
-            : ''
-        ) +
+              : ''
+      ) +
 
-        '</div>' +
+      '</div>' +
 
-        '<button class="add-vouch-btn" onclick="openVouch(' +
-        v.id +
-        ')">' +
+      '<button class="add-vouch-btn" onclick="openVouch(' +
+      v.id +
+      ')">' +
 
-        '+ Add Your Vouch' +
+      '+ Add Your Vouch' +
 
-        '</button>'
-      );
-    }
+      '</button>'
+  );
+}
 
-    function buildVPInfo(v) {
+function buildVPInfo(v) {
 
-      const hoursHTML =
-        Object.entries(v.hours || {}).map(([day, time]) =>
+  const hoursHTML =
+      Object.entries(v.hours || {}).map(([day, time]) =>
 
           '<div class="hours-row">' +
 
@@ -3161,8 +3004,8 @@ requestAnimationFrame(() => {
           (time === 'Closed' ? 'h-closed' : '') +
           '" style="color:' +
           (time === 'Closed'
-            ? 'var(--red)'
-            : 'var(--text-primary)') +
+              ? 'var(--red)'
+              : 'var(--text-primary)') +
           '">' +
 
           time +
@@ -3171,132 +3014,132 @@ requestAnimationFrame(() => {
 
           '</div>'
 
-        ).join('');
+      ).join('');
 
-      return (
+  return (
 
-        '<div class="section-heading">' +
+      '<div class="section-heading">' +
 
-        'About' +
+      'About' +
 
-        '</div>' +
+      '</div>' +
 
-        '<p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:1.5rem">' +
+      '<p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:1.5rem">' +
 
-        v.desc +
+      v.desc +
 
-        '</p>' +
+      '</p>' +
 
-        '<div class="section-heading">' +
+      '<div class="section-heading">' +
 
-        'Contact' +
+      'Contact' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem">' +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem">' +
 
-        '<button class="btn btn-wa btn-sm" onclick="openWA(' +
-        v.id +
-        ')">' +
+      '<button class="btn btn-wa btn-sm" onclick="openWA(' +
+      v.id +
+      ')">' +
 
-        '<i class="fa-brands fa-whatsapp" style="margin-right:8px;"></i>' +
+      '<i class="fa-brands fa-whatsapp" style="margin-right:8px;"></i>' +
 
-        'WhatsApp' +
+      'WhatsApp' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-secondary btn-sm" onclick="toast(\'Calling ' +
-        v.phone +
-        '...\',\'info\')">' +
+      '<button class="btn btn-secondary btn-sm" onclick="toast(\'Calling ' +
+      v.phone +
+      '...\',\'info\')">' +
 
-        '<i class="fa-solid fa-phone" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-phone" style="margin-right:8px;"></i>' +
 
-        'Call' +
+      'Call' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-secondary btn-sm" onclick="toast(\'Sharing profile...\',\'info\')">' +
+      '<button class="btn btn-secondary btn-sm" onclick="toast(\'Sharing profile...\',\'info\')">' +
 
-        '<i class="fa-solid fa-share-nodes" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-share-nodes" style="margin-right:8px;"></i>' +
 
-        'Share' +
+      'Share' +
 
-        '</button>' +
+      '</button>' +
 
-        '</div>' +
+      '</div>' +
 
-        (
+      (
           hoursHTML
 
-            ? '<div class="section-heading" style="margin-top:1.5rem">' +
+              ? '<div class="section-heading" style="margin-top:1.5rem">' +
 
-            'Business Hours' +
+              'Business Hours' +
 
-            '</div>' +
+              '</div>' +
 
-            hoursHTML
+              hoursHTML
 
-            : ''
-        )
-      );
-    }
+              : ''
+      )
+  );
+}
 
-    function buildVPSide(v) {
+function buildVPSide(v) {
 
-      return (
+  return (
 
-        '<div class="side-card">' +
+      '<div class="side-card">' +
 
-        '<div class="side-card-title">' +
+      '<div class="side-card-title">' +
 
-        '<i class="fa-solid fa-location-dot" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-location-dot" style="margin-right:8px;"></i>' +
 
-        'Location' +
+      'Location' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="background:var(--cream-dark);border-radius:var(--radius-sm);height:80px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;font-size:32px">' +
+      '<div style="background:var(--cream-dark);border-radius:var(--radius-sm);height:80px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;font-size:32px">' +
 
-        '<i class="fa-solid fa-map-location-dot"></i>' +
+      '<i class="fa-solid fa-map-location-dot"></i>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="font-size:12px;color:var(--text-secondary);line-height:1.6">' +
+      '<div style="font-size:12px;color:var(--text-secondary);line-height:1.6">' +
 
-        v.address +
+      v.address +
 
-        '<br>' +
+      '<br>' +
 
-        v.city +
+      v.city +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="margin-top:.75rem;font-weight:700;color:var(--saffron);font-size:13px">' +
+      '<div style="margin-top:.75rem;font-weight:700;color:var(--saffron);font-size:13px">' +
 
-        v.distance +
+      v.distance +
 
-        'm from your location' +
+      'm from your location' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="side-card">' +
+      '<div class="side-card">' +
 
-        '<div class="side-card-title">' +
+      '<div class="side-card-title">' +
 
-        'Trust Network' +
+      'Trust Network' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">' +
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">' +
 
-        [
-          ['fa-solid fa-star', 'Trust', v.trustScore + '/100'],
-          ['fa-solid fa-comments', 'Vouches', v.vouches],
-          ['fa-solid fa-bullhorn', 'Recs', v.recommendations],
-          ['fa-solid fa-location-dot', 'Distance', v.distance + 'm']
-        ].map(([icon, label, val]) =>
+      [
+        ['fa-solid fa-star', 'Trust', v.trustScore + '/100'],
+        ['fa-solid fa-comments', 'Vouches', v.vouches],
+        ['fa-solid fa-bullhorn', 'Recs', v.recommendations],
+        ['fa-solid fa-location-dot', 'Distance', v.distance + 'm']
+      ].map(([icon, label, val]) =>
 
           '<div style="background:var(--cream);border-radius:var(--radius-sm);padding:10px;text-align:center">' +
 
@@ -3320,242 +3163,242 @@ requestAnimationFrame(() => {
 
           '</div>'
 
-        ).join('') +
+      ).join('') +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<button class="btn btn-primary w-full" style="width:100%;margin-top:.5rem" onclick="openVouch(' +
-        v.id +
-        ')">' +
+      '<button class="btn btn-primary w-full" style="width:100%;margin-top:.5rem" onclick="openVouch(' +
+      v.id +
+      ')">' +
 
-        '<i class="fa-solid fa-house-user" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-house-user" style="margin-right:8px;"></i>' +
 
-        'Add Your Vouch' +
+      'Add Your Vouch' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="btn btn-secondary w-full" style="width:100%;margin-top:8px" onclick="openRecommend()">' +
+      '<button class="btn btn-secondary w-full" style="width:100%;margin-top:8px" onclick="openRecommend()">' +
 
-        '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
 
-        'Recommend This' +
+      'Recommend This' +
 
-        '</button>'
-      );
-    }
+      '</button>'
+  );
+}
 
-    /* ─────────────────────────────────────────────
-   USER PROFILE — FIXED: requires auth, proper state
+/* ─────────────────────────────────────────────
+USER PROFILE — FIXED: requires auth, proper state
 ───────────────────────────────────────────── */
 
-    function renderUserProfile() {
+function renderUserProfile() {
 
-      if (!S.user) {
+  if (!S.user) {
 
-        // Redirect to home and prompt login — don't show broken profile
-        closeModal('m-auth');
+    // Redirect to home and prompt login — don't show broken profile
+    closeModal('m-auth');
 
-        openModal('m-auth');
+    openModal('m-auth');
 
-        return;
-      }
+    return;
+  }
 
-      const u = S.user;
+  const u = S.user;
 
-      const upHero =
-        document.getElementById('up-hero');
+  const upHero =
+      document.getElementById('up-hero');
 
-      if (!upHero) return;
+  if (!upHero) return;
 
-      upHero.innerHTML =
+  upHero.innerHTML =
 
-        '<div class="up-av" style="background:' +
-        (u.color || '#E8651A') +
-        '">' +
+      '<div class="up-av" style="background:' +
+      (u.color || '#E8651A') +
+      '">' +
 
-        (
+      (
           u.name
-            ? u.name[0].toUpperCase()
-            : '?'
-        ) +
+              ? u.name[0].toUpperCase()
+              : '?'
+      ) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div style="flex:1;position:relative;z-index:1">' +
+      '<div style="flex:1;position:relative;z-index:1">' +
 
-        '<div class="up-name">' +
+      '<div class="up-name">' +
 
-        (u.name || 'LocalLift Member') +
+      (u.name || 'LocalLift Member') +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-handle">' +
+      '<div class="up-handle">' +
 
-        '@' +
+      '@' +
 
-        (u.handle || 'member') +
+      (u.handle || 'member') +
 
-        ' · ' +
+      ' · ' +
 
-        (u.city || 'India') +
+      (u.city || 'India') +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-stats">' +
+      '<div class="up-stats">' +
 
-        '<div>' +
+      '<div>' +
 
-        '<div class="up-stat-num">' +
+      '<div class="up-stat-num">' +
 
-        (u.recs || 0) +
+      (u.recs || 0) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-stat-lbl">' +
+      '<div class="up-stat-lbl">' +
 
-        'Recommendations' +
+      'Recommendations' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div>' +
+      '<div>' +
 
-        '<div class="up-stat-num">' +
+      '<div class="up-stat-num">' +
 
-        (u.vouches || 0) +
+      (u.vouches || 0) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-stat-lbl">' +
+      '<div class="up-stat-lbl">' +
 
-        'Vouches' +
+      'Vouches' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div>' +
+      '<div>' +
 
-        '<div class="up-stat-num">' +
+      '<div class="up-stat-num">' +
 
-        S.favs.size +
+      S.favs.size +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-stat-lbl">' +
+      '<div class="up-stat-lbl">' +
 
-        'Saved' +
+      'Saved' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<button class="btn btn-sm" style="background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);position:relative;z-index:1" onclick="doLogout()">' +
+      '<button class="btn btn-sm" style="background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);position:relative;z-index:1" onclick="doLogout()">' +
 
-        '<i class="fa-solid fa-right-from-bracket" style="margin-right:8px;"></i>' +
+      '<i class="fa-solid fa-right-from-bracket" style="margin-right:8px;"></i>' +
 
-        'Sign Out' +
+      'Sign Out' +
 
-        '</button>';
+      '</button>';
 
-      const upBody =
-        document.getElementById('up-body');
+  const upBody =
+      document.getElementById('up-body');
 
-      if (!upBody) return;
+  if (!upBody) return;
 
-      upBody.innerHTML =
+  upBody.innerHTML =
 
-        '<div class="contribution-score">' +
+      '<div class="contribution-score">' +
 
-        '<div class="cs-score">' +
+      '<div class="cs-score">' +
 
-        (u.score || 0) +
+      (u.score || 0) +
 
-        '</div>' +
+      '</div>' +
 
-        '<div>' +
+      '<div>' +
 
-        '<div class="cs-label">' +
+      '<div class="cs-label">' +
 
-        'Community Contribution Score' +
+      'Community Contribution Score' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="cs-desc">' +
+      '<div class="cs-desc">' +
 
-        'Every recommendation and vouch you add helps your community discover trusted local businesses.' +
+      'Every recommendation and vouch you add helps your community discover trusted local businesses.' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div class="up-tabs" id="up-tabs">' +
+      '<div class="up-tabs" id="up-tabs">' +
 
-        '<button class="tab-b on" onclick="switchUPTab(\'recs\')">' +
+      '<button class="tab-b on" onclick="switchUPTab(\'recs\')">' +
 
-        '<i class="fa-solid fa-bullhorn" style="margin-right:6px;"></i>' +
+      '<i class="fa-solid fa-bullhorn" style="margin-right:6px;"></i>' +
 
-        'Recommendations' +
+      'Recommendations' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="tab-b" onclick="switchUPTab(\'saved\')">' +
+      '<button class="tab-b" onclick="switchUPTab(\'saved\')">' +
 
-        '<i class="fa-solid fa-heart" style="margin-right:6px;"></i>' +
+      '<i class="fa-solid fa-heart" style="margin-right:6px;"></i>' +
 
-        'Saved' +
+      'Saved' +
 
-        '</button>' +
+      '</button>' +
 
-        '<button class="tab-b" onclick="switchUPTab(\'vouches\')">' +
+      '<button class="tab-b" onclick="switchUPTab(\'vouches\')">' +
 
-        '<i class="fa-solid fa-house-user" style="margin-right:6px;"></i>' +
+      '<i class="fa-solid fa-house-user" style="margin-right:6px;"></i>' +
 
-        'Vouches' +
+      'Vouches' +
 
-        '</button>' +
+      '</button>' +
 
-        '</div>' +
+      '</div>' +
 
-        '<div id="up-tab-content"></div>';
+      '<div id="up-tab-content"></div>';
 
-      switchUPTab('recs');
-    }
+  switchUPTab('recs');
+}
 
-    function switchUPTab(tab) {
+function switchUPTab(tab) {
 
-      S.userTab = tab;
+  S.userTab = tab;
 
-      document.querySelectorAll('#up-tabs .tab-b')
-        .forEach((b, i) =>
+  document.querySelectorAll('#up-tabs .tab-b')
+      .forEach((b, i) =>
           b.classList.toggle(
-            'on',
-            ['recs', 'saved', 'vouches'][i] === tab
+              'on',
+              ['recs', 'saved', 'vouches'][i] === tab
           )
-        );
+      );
 
-      const el =
-        document.getElementById('up-tab-content');
+  const el =
+      document.getElementById('up-tab-content');
 
-      if (!el) return;
+  if (!el) return;
 
-      if (tab === 'recs') {
+  if (tab === 'recs') {
 
-        const shown =
-            backendVendors.slice(0,4);
+    const shown =
+        backendVendors.slice(0,4);
 
-        el.innerHTML = shown.length
+    el.innerHTML = shown.length
 
-          ? shown.map(v =>
+        ? shown.map(v =>
 
             '<div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="goProfile(' +
             v.id +
@@ -3609,47 +3452,47 @@ requestAnimationFrame(() => {
 
             '</div>'
 
-          ).join('')
+        ).join('')
 
-          : '<div class="empty">' +
+        : '<div class="empty">' +
 
-          '<div class="empty-icon">' +
+        '<div class="empty-icon">' +
 
-          '<i class="fa-solid fa-bullhorn"></i>' +
+        '<i class="fa-solid fa-bullhorn"></i>' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-title">' +
+        '<div class="empty-title">' +
 
-          'No recommendations yet' +
+        'No recommendations yet' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-desc">' +
+        '<div class="empty-desc">' +
 
-          'Share your first recommendation and help your community' +
+        'Share your first recommendation and help your community' +
 
-          '</div>' +
+        '</div>' +
 
-          '<button class="btn btn-primary" style="margin-top:1rem" onclick="openRecommend()">' +
+        '<button class="btn btn-primary" style="margin-top:1rem" onclick="openRecommend()">' +
 
-          '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
+        '<i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>' +
 
-          'Recommend a Business' +
+        'Recommend a Business' +
 
-          '</button>' +
+        '</button>' +
 
-          '</div>';
-      }
+        '</div>';
+  }
 
-      if (tab === 'saved') {
+  if (tab === 'saved') {
 
-        const saved =
-          DATA.vendors.filter(v => S.favs.has(v.id));
+    const saved =
+        DATA.vendors.filter(v => S.favs.has(v.id));
 
-        el.innerHTML = saved.length
+    el.innerHTML = saved.length
 
-          ? saved.map(v =>
+        ? saved.map(v =>
 
             '<div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="goProfile(' +
             v.id +
@@ -3693,417 +3536,417 @@ requestAnimationFrame(() => {
 
             '</div>'
 
-          ).join('')
+        ).join('')
 
-          : '<div class="empty">' +
+        : '<div class="empty">' +
 
-          '<div class="empty-icon">' +
+        '<div class="empty-icon">' +
 
-          '<i class="fa-solid fa-heart"></i>' +
+        '<i class="fa-solid fa-heart"></i>' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-title">' +
+        '<div class="empty-title">' +
 
-          'Nothing saved yet' +
+        'Nothing saved yet' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-desc">' +
+        '<div class="empty-desc">' +
 
-          'Heart businesses while browsing to save them here' +
+        'Heart businesses while browsing to save them here' +
 
-          '</div>' +
+        '</div>' +
 
-          '</div>';
-      }
+        '</div>';
+  }
 
-      if (tab === 'vouches') {
+  if (tab === 'vouches') {
 
-        el.innerHTML =
+    el.innerHTML =
 
-          '<div class="empty">' +
+        '<div class="empty">' +
 
-          '<div class="empty-icon">' +
+        '<div class="empty-icon">' +
 
-          '<i class="fa-solid fa-house-user"></i>' +
+        '<i class="fa-solid fa-house-user"></i>' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-title">' +
+        '<div class="empty-title">' +
 
-          'Your vouches strengthen community trust' +
+        'Your vouches strengthen community trust' +
 
-          '</div>' +
+        '</div>' +
 
-          '<div class="empty-desc">' +
+        '<div class="empty-desc">' +
 
-          'Visit any business profile and add your vouch to help your neighbours discover trusted businesses' +
+        'Visit any business profile and add your vouch to help your neighbours discover trusted businesses' +
 
-          '</div>' +
+        '</div>' +
 
-          '<button class="btn btn-sage" style="margin-top:1rem" onclick="go(\'feed\')">' +
+        '<button class="btn btn-sage" style="margin-top:1rem" onclick="go(\'feed\')">' +
 
-          'Discover Businesses' +
+        'Discover Businesses' +
 
-          '</button>' +
+        '</button>' +
 
-          '</div>';
-      }
-    }
+        '</div>';
+  }
+}
 
-    /* ─────────────────────────────────────────────
-   VENDOR CLAIM PAGE
+/* ─────────────────────────────────────────────
+VENDOR CLAIM PAGE
 ───────────────────────────────────────────── */
 
-    function renderVendorPage() {
+function renderVendorPage() {
 
-      vendorSearch('');
+  vendorSearch('');
 
-      renderVendorWhy();
-    }
+  renderVendorWhy();
+}
 
-    function vendorSearch(q) {
+function vendorSearch(q) {
 
-      const el =
-        document.getElementById('vd-search-results');
+  const el =
+      document.getElementById('vd-search-results');
 
-      if (!el) return;
+  if (!el) return;
 
-      const list = q
+  const list = q
 
-        ? DATA.vendors.filter(v =>
+      ? DATA.vendors.filter(v =>
 
           v.name.toLowerCase().includes(q.toLowerCase()) ||
 
           v.cat.toLowerCase().includes(q.toLowerCase())
-        )
+      )
 
-        : backendVendors.slice(0,4);
+      : backendVendors.slice(0,4);
 
-      if (!list.length) {
+  if (!list.length) {
 
-        el.innerHTML =
+    el.innerHTML =
 
-          '<div class="empty">' +
+        '<div class="empty">' +
 
-          '<div class="empty-icon">' +
+        '<div class="empty-icon">' +
 
-          '<i class="fa-solid fa-magnifying-glass"></i>' +
-
-          '</div>' +
-
-          '<div class="empty-title">' +
-
-          'Not found' +
-
-          '</div>' +
-
-          '<div class="empty-desc">' +
-
-          'If your business isn\'t listed yet, ask a neighbour to recommend you first!' +
-
-          '</div>' +
-
-          '</div>';
-
-        return;
-      }
-
-      el.innerHTML = list.map(v =>
-
-        '<div style="display:flex;align-items:center;gap:12px;padding:12px;border:1.5px solid var(--border);border-radius:var(--radius-sm);margin-bottom:8px;background:var(--cream);cursor:pointer;transition:var(--transition)" onmouseover="this.style.borderColor=\'var(--saffron-mid)\'" onmouseout="this.style.borderColor=\'var(--border)\'" onclick="goProfile(' +
-        v.id +
-        ')">' +
-
-        '<span style="font-size:28px">' +
-
-        '<i class="' + v.icon + '"></i>' +
-
-        '</span>' +
-
-        '<div style="flex:1">' +
-
-        '<div style="font-weight:700;font-size:14px">' +
-
-        v.name +
+        '<i class="fa-solid fa-magnifying-glass"></i>' +
 
         '</div>' +
 
-        '<div style="font-size:12px;color:var(--text-muted)">' +
+        '<div class="empty-title">' +
 
-        v.cat +
-
-        ' · ' +
-
-        v.city +
-
-        ' · Trust: ' +
-
-        v.trustScore +
+        'Not found' +
 
         '</div>' +
 
+        '<div class="empty-desc">' +
+
+        'If your business isn\'t listed yet, ask a neighbour to recommend you first!' +
+
         '</div>' +
 
-        '<div style="display:flex;gap:6px">' +
+        '</div>';
 
-        '<button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();goProfile(' +
-        v.id +
-        ')">' +
+    return;
+  }
 
-        'View' +
+  el.innerHTML = list.map(v =>
 
-        '</button>' +
+      '<div style="display:flex;align-items:center;gap:12px;padding:12px;border:1.5px solid var(--border);border-radius:var(--radius-sm);margin-bottom:8px;background:var(--cream);cursor:pointer;transition:var(--transition)" onmouseover="this.style.borderColor=\'var(--saffron-mid)\'" onmouseout="this.style.borderColor=\'var(--border)\'" onclick="goProfile(' +
+      v.id +
+      ')">' +
 
-        (
+      '<span style="font-size:28px">' +
+
+      '<i class="' + v.icon + '"></i>' +
+
+      '</span>' +
+
+      '<div style="flex:1">' +
+
+      '<div style="font-weight:700;font-size:14px">' +
+
+      v.name +
+
+      '</div>' +
+
+      '<div style="font-size:12px;color:var(--text-muted)">' +
+
+      v.cat +
+
+      ' · ' +
+
+      v.city +
+
+      ' · Trust: ' +
+
+      v.trustScore +
+
+      '</div>' +
+
+      '</div>' +
+
+      '<div style="display:flex;gap:6px">' +
+
+      '<button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();goProfile(' +
+      v.id +
+      ')">' +
+
+      'View' +
+
+      '</button>' +
+
+      (
           !v.claimed
 
-            ? '<button class="btn btn-primary btn-sm" onclick="event.stopPropagation();claimProfile(' +
-            v.id +
-            ')">' +
+              ? '<button class="btn btn-primary btn-sm" onclick="event.stopPropagation();claimProfile(' +
+              v.id +
+              ')">' +
 
-            'Claim' +
+              'Claim' +
 
-            '</button>'
+              '</button>'
 
-            : '<span class="badge b-sage">Claimed</span>'
-        ) +
+              : '<span class="badge b-sage">Claimed</span>'
+      ) +
 
-        '</div>' +
+      '</div>' +
 
-        '</div>'
+      '</div>'
 
-      ).join('');
+  ).join('');
+}
+
+function claimProfile(id) {
+
+  if (!S.user) {
+
+    openModal('m-auth');
+
+    return;
+  }
+
+  const v =
+      DATA.vendors.find(x => x.id == id);
+
+  toast(
+      'Claim request submitted for ' +
+      (v ? v.name : 'this business') +
+      '. Our team will verify ownership within 48 hours.',
+      'success'
+  );
+
+  if (v) {
+
+    v.claimed = true;
+  }
+
+  vendorSearch(
+      document.getElementById('vd-search').value
+  );
+}
+
+function renderVendorWhy() {
+
+  const el =
+      document.getElementById('vd-why-grid');
+
+  if (!el) return;
+
+  const pts = [
+
+    {
+      icon: 'fa-solid fa-house-user',
+      title: 'Community builds your trust',
+      desc: 'Your neighbours vouch for you first. You don\'t need to advertise.'
+    },
+
+    {
+      icon: 'fa-solid fa-bullhorn',
+      title: 'Zero cost, forever',
+      desc: 'LocalLift is free. The community recommends you — not your ad budget.'
+    },
+
+    {
+      icon: 'fa-solid fa-sparkles',
+      title: 'Organic discovery',
+      desc: 'Trending purely because customers love you — more powerful than any listing.'
+    },
+
+    {
+      icon: 'fa-solid fa-chart-column',
+      title: 'See your trust score',
+      desc: 'Understand what your community thinks and how to serve them better.'
+    },
+
+  ];
+
+  el.innerHTML = pts.map(p =>
+
+      '<div style="background:rgba(250,247,242,.6);border-radius:var(--radius);padding:1.25rem;border:1px solid rgba(232,101,26,.3)">' +
+
+      '<div style="font-size:26px;margin-bottom:.75rem">' +
+
+      '<i class="' + p.icon + '"></i>' +
+
+      '</div>' +
+
+      '<div style="font-family:var(--font-display);font-size:15px;font-weight:700;margin-bottom:.375rem;color:var(--earth)">' +
+
+      p.title +
+
+      '</div>' +
+
+      '<p style="font-size:13px;color:var(--earth-mid);line-height:1.6">' +
+
+      p.desc +
+
+      '</p>' +
+
+      '</div>'
+
+  ).join('');
+}
+
+/* ─────────────────────────────────────────────
+   WHATSAPP
+───────────────────────────────────────────── */
+
+function openWA(vendorId) {
+
+  const v = vendorId
+
+      ? backendVendors.find(x => x.id == vendorId)
+
+      : null;
+
+  const msg = v
+
+      ? 'Hi ' +
+      v.name +
+      '! I found you on LocalLift and I\'m interested in your services. Could you share more details?'
+
+      : 'Hi! I\'d like to register my business on LocalLift through WhatsApp.';
+
+  window.open(
+      'https://wa.me/' +
+      (v ? v.phone : '919876500001') +
+      '?text=' +
+      encodeURIComponent(msg),
+      '_blank'
+  );
+
+  toast(
+      'Opening WhatsApp...',
+      'info'
+  );
+}
+
+/* ─────────────────────────────────────────────
+   MOBILE MENU
+───────────────────────────────────────────── */
+
+function toggleMobile() {
+
+  document.getElementById('mmenu')
+      .classList.toggle('open');
+}
+
+document.addEventListener('click', e => {
+
+  const m =
+      document.getElementById('mmenu');
+
+  const b =
+      document.querySelector('.burger');
+
+  if (
+      m &&
+      b &&
+      !m.contains(e.target) &&
+      !b.contains(e.target)
+  ) {
+
+    m.classList.remove('open');
+  }
+});
+
+/* ─────────────────────────────────────────────
+   INIT
+───────────────────────────────────────────── */
+
+/* CONTACT FORM — frontend-only */
+
+function submitContact(e) {
+
+  e.preventDefault();
+
+  const name =
+      document.getElementById('ct-name');
+
+  const email =
+      document.getElementById('ct-email');
+
+  const msg =
+      document.getElementById('ct-msg');
+
+  let ok = true;
+
+  [name, email, msg].forEach(f => {
+
+    f.classList.remove('err');
+
+    if (!f.value.trim()) {
+
+      f.classList.add('err');
+
+      ok = false;
     }
+  });
 
-    function claimProfile(id) {
+  if (!ok) {
 
-      if (!S.user) {
+    toast(
+        'Please fill all fields',
+        'error'
+    );
 
-        openModal('m-auth');
+    return false;
+  }
 
-        return;
-      }
-
-      const v =
-        DATA.vendors.find(x => x.id == id);
-
-      toast(
-        'Claim request submitted for ' +
-        (v ? v.name : 'this business') +
-        '. Our team will verify ownership within 48 hours.',
-        'success'
-      );
-
-      if (v) {
-
-        v.claimed = true;
-      }
-
-      vendorSearch(
-        document.getElementById('vd-search').value
-      );
-    }
-
-    function renderVendorWhy() {
-
-      const el =
-        document.getElementById('vd-why-grid');
-
-      if (!el) return;
-
-      const pts = [
-
-        {
-          icon: 'fa-solid fa-house-user',
-          title: 'Community builds your trust',
-          desc: 'Your neighbours vouch for you first. You don\'t need to advertise.'
-        },
-
-        {
-          icon: 'fa-solid fa-bullhorn',
-          title: 'Zero cost, forever',
-          desc: 'LocalLift is free. The community recommends you — not your ad budget.'
-        },
-
-        {
-          icon: 'fa-solid fa-sparkles',
-          title: 'Organic discovery',
-          desc: 'Trending purely because customers love you — more powerful than any listing.'
-        },
-
-        {
-          icon: 'fa-solid fa-chart-column',
-          title: 'See your trust score',
-          desc: 'Understand what your community thinks and how to serve them better.'
-        },
-
-      ];
-
-      el.innerHTML = pts.map(p =>
-
-        '<div style="background:rgba(250,247,242,.6);border-radius:var(--radius);padding:1.25rem;border:1px solid rgba(232,101,26,.3)">' +
-
-        '<div style="font-size:26px;margin-bottom:.75rem">' +
-
-        '<i class="' + p.icon + '"></i>' +
-
-        '</div>' +
-
-        '<div style="font-family:var(--font-display);font-size:15px;font-weight:700;margin-bottom:.375rem;color:var(--earth)">' +
-
-        p.title +
-
-        '</div>' +
-
-        '<p style="font-size:13px;color:var(--earth-mid);line-height:1.6">' +
-
-        p.desc +
-
-        '</p>' +
-
-        '</div>'
-
-      ).join('');
-    }
-
-    /* ─────────────────────────────────────────────
-       WHATSAPP
-    ───────────────────────────────────────────── */
-
-    function openWA(vendorId) {
-
-      const v = vendorId
-
-        ? backendVendors.find(x => x.id == vendorId)
-
-        : null;
-
-      const msg = v
-
-        ? 'Hi ' +
-        v.name +
-        '! I found you on LocalLift and I\'m interested in your services. Could you share more details?'
-
-        : 'Hi! I\'d like to register my business on LocalLift through WhatsApp.';
-
-      window.open(
-        'https://wa.me/' +
-        (v ? v.phone : '919876500001') +
-        '?text=' +
-        encodeURIComponent(msg),
-        '_blank'
-      );
-
-      toast(
-        'Opening WhatsApp...',
-        'info'
-      );
-    }
-
-    /* ─────────────────────────────────────────────
-       MOBILE MENU
-    ───────────────────────────────────────────── */
-
-    function toggleMobile() {
-
-      document.getElementById('mmenu')
-        .classList.toggle('open');
-    }
-
-    document.addEventListener('click', e => {
-
-      const m =
-        document.getElementById('mmenu');
-
-      const b =
-        document.querySelector('.burger');
-
-      if (
-        m &&
-        b &&
-        !m.contains(e.target) &&
-        !b.contains(e.target)
-      ) {
-
-        m.classList.remove('open');
-      }
-    });
-
-    /* ─────────────────────────────────────────────
-       INIT
-    ───────────────────────────────────────────── */
-
-    /* CONTACT FORM — frontend-only */
-
-    function submitContact(e) {
-
-      e.preventDefault();
-
-      const name =
-        document.getElementById('ct-name');
-
-      const email =
-        document.getElementById('ct-email');
-
-      const msg =
-        document.getElementById('ct-msg');
-
-      let ok = true;
-
-      [name, email, msg].forEach(f => {
-
-        f.classList.remove('err');
-
-        if (!f.value.trim()) {
-
-          f.classList.add('err');
-
-          ok = false;
-        }
-      });
-
-      if (!ok) {
-
-        toast(
-          'Please fill all fields',
-          'error'
-        );
-
-        return false;
-      }
-
-      if (
-        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/
           .test(email.value)
-      ) {
+  ) {
 
-        email.classList.add('err');
+    email.classList.add('err');
 
-        toast(
-          'Enter a valid email',
-          'error'
-        );
+    toast(
+        'Enter a valid email',
+        'error'
+    );
 
-        return false;
-      }
+    return false;
+  }
 
-      toast(
-        'Thanks! We\'ll get back to you within 24 hours.',
-        'success'
-      );
+  toast(
+      'Thanks! We\'ll get back to you within 24 hours.',
+      'success'
+  );
 
-      name.value = '';
+  name.value = '';
 
-      email.value = '';
+  email.value = '';
 
-      msg.value = '';
+  msg.value = '';
 
-      return false;
-    }
+  return false;
+}
 
-    go('home');
+go('home');
 
 function getCategoryColor(category) {
 
