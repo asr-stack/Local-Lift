@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLift — Discover Your Neighbourhood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+
+<body>
+
+  <!-- TOASTS -->
+  <div id="toasts"></div>
+
+  <!-- STICKY WA -->
+  <div class="sticky-wa" id="swa">
+    <span class="swa-tip">Chat on WhatsApp</span>
+    <button class="swa-btn" onclick="openWA(null)"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+
+  <!-- ── MODALS ─────────────────────────────────────────── -->
+
+  <!-- AUTH MODAL -->
+  <div class="overlay hidden" id="m-auth">
+    <div class="modal modal-sm" style="max-width:400px">
+      <div class="m-head">
+        <span class="m-title" id="auth-title">Welcome back</span>
+        <button class="m-close" onclick="closeModal('m-auth')">×</button>
+      </div>
+      <div class="auth-tabs">
+        <div class="at-tab on" id="at-login" onclick="switchAuth('login')">Sign In</div>
+        <div class="at-tab" id="at-signup" onclick="switchAuth('signup')">Join Community</div>
+      </div>
+      <!-- LOGIN -->
+      <div id="auth-login">
+
+        <button class="social-btn" onclick="socialAuth('Google')">
+          <i class="fa-brands fa-google" style="margin-right:8px;"></i>
+          Continue with Google
+        </button>
+
+        <button class="social-btn" onclick="socialAuth('Phone')">
+          <i class="fa-solid fa-phone" style="margin-right:8px;"></i>
+          Continue with Phone
+        </button>
+
+        <div class="fdiv">or email</div>
+
+        <div class="fg">
+          <label class="fl">Email</label>
+
+          <div class="iw">
+            <span class="ii">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <input class="fi fi-icon" type="email" id="l-email" placeholder="you@example.com">
+          </div>
+
+          <span class="ferr hidden" id="l-email-e">
+            Enter a valid email
+          </span>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Password</label>
+
+          <div class="iw">
+            <input class="fi" type="password" id="l-pass" placeholder="••••••••">
+
+            <span class="iir" onclick="togglePwd('l-pass',this)">
+              <i class="fa-solid fa-eye"></i>
+            </span>
+          </div>
+
+          <span class="ferr hidden" id="l-pass-e">
+            Password required (min 6 characters)
+          </span>
+        </div>
+
+        <button class="btn btn-primary w-full" style="width:100%;margin-top:4px" id="login-btn" onclick="doLogin()">
+          Sign In
+        </button>
+
+        <p style="text-align:center;
+            font-size:13px;
+            color:var(--text-muted);
+            margin-top:12px">
+
+          Forgot?
+
+          <span style="color:var(--saffron);
+                 cursor:pointer;
+                 font-weight:600" onclick="toast('Reset link sent!','success')">
+
+            Reset password
+
+          </span>
+        </p>
+
+      </div>
+      <!-- SIGNUP -->
+      <div id="auth-signup" class="hidden">
+        <button class="social-btn" onclick="socialAuth('Google')">
+          <i class="fa-brands fa-google" style="margin-right:8px;"></i> Sign up with Google
+        </button>
+
+        <div class="fdiv">or</div>
+
+        <div class="frow">
+          <div class="fg">
+            <label class="fl">First Name</label>
+            <input class="fi" id="s-fname" placeholder="Priya">
+          </div>
+
+          <div class="fg">
+            <label class="fl">Last Name</label>
+            <input class="fi" id="s-lname" placeholder="Sharma">
+          </div>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Email</label>
+
+          <input class="fi" type="email" id="s-email" placeholder="you@example.com">
+
+          <span class="ferr hidden" id="s-email-e">
+            Enter valid email
+          </span>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Password</label>
+
+          <div class="iw">
+            <input class="fi" type="password" id="s-pass" placeholder="Min 8 characters"
+              oninput="calcStrength(this.value)">
+
+            <span class="iir" onclick="togglePwd('s-pass',this)">
+              <i class="fa-solid fa-eye"></i>
+            </span>
+          </div>
+
+          <div class="pass-strength-track">
+            <div class="pass-strength-fill" id="pstrength" style="width:0%">
+            </div>
+          </div>
+
+          <span class="fhint" id="pslabel">
+            Password strength
+          </span>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Your Neighbourhood / City</label>
+
+          <input class="fi" id="s-city" placeholder="Koramangala, Bengaluru">
+        </div>
+
+        <label class="chk" style="margin-bottom:14px;
+                font-size:13px;
+                color:var(--text-secondary)">
+
+          <input type="checkbox" id="s-terms">
+
+          I agree to the
+          <span style="color:var(--saffron);cursor:pointer">
+            Community Guidelines
+          </span>
+        </label>
+
+        <button class="btn btn-primary w-full" style="width:100%" id="signup-btn" onclick="doSignup()">
+          Join LocalLift
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECOMMEND FLOW MODAL -->
+  <div class="overlay hidden" id="m-recommend">
+    <div class="modal">
+      <div class="m-head">
+        <span class="m-title">Recommend a Local Business</span>
+        <button class="m-close" onclick="closeModal('m-recommend')">×</button>
+      </div>
+
+      <div class="rec-steps" id="rec-steps"></div>
+
+      <!-- step 1 -->
+      <div class="rec-step-content on" id="rs-1">
+
+        <p style="font-size:14px;color:var(--text-secondary);margin-bottom:1.25rem">
+          Which category best fits the business you're recommending?
+        </p>
+
+        <div class="cat-select-grid" id="rec-cat-grid"></div>
+
+        <div class="fg">
+          <label class="fl">Business Name *</label>
+
+          <input class="fi" id="rec-biz-name" placeholder="e.g. Sunita's Home Tiffins">
+        </div>
+
+        <div class="frow">
+
+          <div class="fg">
+            <label class="fl">Location / Area</label>
+
+            <input class="fi" id="rec-location" placeholder="Street / area name">
+          </div>
+
+          <div class="fg">
+            <label class="fl">Contact (optional)</label>
+
+            <input class="fi" type="tel" id="rec-phone" placeholder="+91 98765...">
+          </div>
+
+        </div>
+
+        <div style="display:flex;justify-content:flex-end">
+          <button class="btn btn-primary" onclick="recNext(2)">
+            Continue →
+          </button>
+        </div>
+
+      </div>
+
+      <!-- step 2 -->
+      <div class="rec-step-content" id="rs-2">
+
+        <p style="font-size:14px;color:var(--text-secondary);margin-bottom:.75rem">
+          Tell the community your story.
+          <em>Why do you trust this business?</em>
+        </p>
+
+        <textarea class="story-textarea" id="rec-story"
+          placeholder="This tailor saved my outfit the night before my best friend's wedding…"></textarea>
+
+        <p style="font-size:11.5px;color:var(--text-muted);margin-top:6px;margin-bottom:1.25rem">
+          Stories like this build trust for your entire neighbourhood. Be genuine.
+        </p>
+
+        <div class="fg">
+          <label class="fl">Your overall experience</label>
+
+          <div class="rating-row" id="rec-stars"></div>
+        </div>
+
+        <div style="display:flex;justify-content:space-between">
+
+          <button class="btn btn-ghost" onclick="recNext(1)">
+            ← Back
+          </button>
+
+          <button class="btn btn-primary" onclick="recNext(3)">
+            Continue →
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- step 3 -->
+      <div class="rec-step-content" id="rs-3">
+
+        <div id="rec-preview" style="background:var(--cream);
+                  border-radius:var(--radius);
+                  padding:1.25rem;
+                  margin-bottom:1.25rem;
+                  border:1.5px solid var(--border)">
+        </div>
+
+        <label class="chk" style="margin-bottom:1.25rem;
+                    font-size:13px;
+                    color:var(--text-secondary)">
+
+          <input type="checkbox" id="rec-nb" checked>
+
+          Mark as <strong>Neighbour Vouch</strong> — I personally know this business
+        </label>
+
+        <div style="display:flex;justify-content:space-between">
+
+          <button class="btn btn-ghost" onclick="recNext(2)">
+            ← Back
+          </button>
+
+          <button class="btn btn-sage" id="post-rec-btn" onclick="submitRecommendation()">
+
+            <i class="fa-solid fa-shop"></i> Post Recommendation
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- VOUCH MODAL -->
+  <div class="overlay hidden" id="m-vouch">
+    <div class="modal modal-sm" style="max-width:380px">
+      <div class="m-head"><span class="m-title">Add Your Vouch</span><button class="m-close"
+          onclick="closeModal('m-vouch')">×</button></div>
+      <div id="vouch-vendor-name"
+        style="background:var(--saffron-light);border-radius:var(--radius-sm);padding:.875rem;margin-bottom:1.25rem;font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--earth)">
+      </div>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:1.25rem;line-height:1.6">A vouch says: <em>"I
+          personally know this business and trust it for my community."</em></p>
+      <div class="fg"><label class="fl">Quick note (optional)</label><textarea class="fta" id="vouch-note"
+          placeholder="I've known Sunita aunty for 3 years…" style="min-height:70px"></textarea></div>
+      <label class="chk" style="margin-bottom:1.25rem;font-size:13px;color:var(--text-secondary)"><input type="checkbox"
+          id="vouch-anon"> Post anonymously</label>
+      <button class="btn btn-sage w-full" style="width:100%" onclick="submitVouch()">✓ Add Community Vouch</button>
+    </div>
+  </div>
+
+  <!-- REPORT MODAL -->
+  <div class="overlay hidden" id="m-report">
+    <div class="modal modal-sm" style="max-width:380px">
+
+      <div class="m-head">
+        <span class="m-title">Report a Problem</span>
+        <button class="m-close" onclick="closeModal('m-report')">×</button>
+      </div>
+
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:1rem">
+        Help keep LocalLift trustworthy for the community.
+      </p>
+
+      <div class="report-opts-grid" id="report-opts">
+
+        <div class="cat-sel" onclick="pickReport(this,'Fake or misleading')">
+          <div class="cat-emoji">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div class="cat-label">Fake / Misleading</div>
+        </div>
+
+        <div class="cat-sel" onclick="pickReport(this,'Permanently closed')">
+          <div class="cat-emoji">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="cat-label">Permanently Closed</div>
+        </div>
+
+        <div class="cat-sel" onclick="pickReport(this,'Wrong information')">
+          <div class="cat-emoji">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="cat-label">Wrong Info</div>
+        </div>
+
+        <div class="cat-sel" onclick="pickReport(this,'Inappropriate')">
+          <div class="cat-emoji">
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+          <div class="cat-label">Inappropriate</div>
+        </div>
+
+      </div>
+
+      <div class="fg">
+        <label class="fl">Details (optional)</label>
+
+        <textarea class="fta" id="report-note" style="min-height:70px" placeholder="Tell us more…"></textarea>
+      </div>
+
+      <button class="btn w-full" style="width:100%;background:var(--red);color:#fff" onclick="submitReport()">
+
+        Submit Report
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav id="nav">
+
+    <div class="nav-logo" onclick="go('home')">
+      <i class="fa-solid fa-store"></i> Local<em>Lift</em>
+    </div>
+
+    <div class="nav-centre">
+      <button class="nav-link" data-p="home" onclick="go('home')">Home</button>
+      <button class="nav-link" data-p="feed" onclick="go('feed')">Discover</button>
+      <button class="nav-link" data-p="about" onclick="go('about')">About</button>
+      <button class="nav-link" data-p="contact" onclick="go('contact')">Contact</button>
+    </div>
+
+    <div class="nav-right">
+
+      <div class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+
+      <div id="nav-guest" style="display:flex;gap:6px">
+        <button class="btn btn-ghost btn-sm" onclick="openLogin()">
+          Sign In
+        </button>
+
+        <button class="btn btn-primary btn-sm" onclick="openSignup()">
+          Join Free
+        </button>
+      </div>
+
+      <div id="nav-user" class="hidden" style="display:flex;align-items:center;gap:8px">
+
+        <div class="nav-av" id="nav-av" onclick="go('user-profile')" style="background:var(--saffron)">
+          P
+        </div>
+      </div>
+
+      <button class="burger" onclick="toggleMobile()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+  <div class="mmenu" id="mmenu">
+
+    <button class="mml" onclick="go('home');toggleMobile()">
+      <i class="fa-solid fa-house" style="margin-right:8px;"></i>Home
+    </button>
+
+    <button class="mml" onclick="go('feed');toggleMobile()">
+      <i class="fa-solid fa-magnifying-glass" style="margin-right:8px;"></i>Discover
+    </button>
+
+    <button class="mml" onclick="openRecommend();toggleMobile()">
+      <i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>Recommend a Business
+    </button>
+
+    <button class="mml" onclick="go('about');toggleMobile()">
+      <i class="fa-solid fa-circle-info" style="margin-right:8px;"></i>About
+    </button>
+
+    <button class="mml" onclick="go('contact');toggleMobile()">
+      <i class="fa-solid fa-envelope" style="margin-right:8px;"></i>Contact
+    </button>
+
+    <button class="mml" onclick="go('user-profile');toggleMobile()">
+      <i class="fa-solid fa-user" style="margin-right:8px;"></i>My Profile
+    </button>
+
+    <button class="mml" onclick="openModal('m-auth');toggleMobile()">
+      <i class="fa-solid fa-key" style="margin-right:8px;"></i>Sign In / Join
+    </button>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: HOME  (V1 design reference)
+     ════════════════════════════════════════════ -->
+  <div class="page on" id="pg-home">
+
+    <!-- HERO — V1 STYLE -->
+    <section class="hero">
+
+      <div>
+
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-pulse"></span>
+          India's Hyperlocal Discovery Platform
+        </div>
+
+        <h1>
+          Find the <em>real</em> gems of your neighbourhood
+        </h1>
+
+        <p class="hero-desc">
+          LocalLift connects you to the tiffin aunty next street, your neighbourhood tailor,
+          the hardware uncle — all verified by your actual neighbours, not algorithms.
+        </p>
+
+        <div class="hero-search">
+
+          <input type="text" id="hero-search-input" placeholder="Search tiffin, tailor, repairs, tutor…"
+            oninput="heroSearchInput(this.value)" onkeydown="if(event.key==='Enter')doHeroSearch()">
+
+          <button class="btn btn-primary" style="border-radius:0 999px 999px 0;padding:12px 24px;flex-shrink:0"
+            onclick="doHeroSearch()">
+
+            Search
+          </button>
+
+        </div>
+
+        <div class="hero-cta-row">
+
+          <button class="btn btn-secondary btn-lg" onclick="go('feed')">
+            <i class="fa-solid fa-magnifying-glass" style="margin-right:8px;"></i>
+            Explore Nearby
+          </button>
+
+        </div>
+
+        <div class="hero-stat-row">
+
+          <div>
+            <div class="hero-stat-num">12,400+</div>
+            <div class="hero-stat-label">Verified businesses</div>
+          </div>
+
+          <div>
+            <div class="hero-stat-num">48</div>
+            <div class="hero-stat-label">Cities live</div>
+          </div>
+
+          <div>
+            <div class="hero-stat-num">94%</div>
+            <div class="hero-stat-label">Neighbour verified</div>
+          </div>
+
+          <div>
+            <div class="hero-stat-num">2.1L+</div>
+            <div class="hero-stat-label">Happy customers</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="floating-card">
+
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+
+            <span style="font-weight:600;font-size:13px">
+              Near Koramangala, Bengaluru
+            </span>
+
+            <span class="badge badge-saffron" style="animation:pulse 2s infinite">
+              ● LIVE
+            </span>
+
+          </div>
+
+          <div class="mini-map" id="hero-mini-map"></div>
+
+          <div class="vendor-scroll-row" id="hero-vendor-scroll"></div>
+
+        </div>
+
+        <div class="floating-card" style="background:var(--green-light);border-color:var(--green)">
+
+          <div style="display:flex;gap:12px;align-items:center">
+
+            <span style="font-size:28px">
+              <i class="fa-solid fa-shop"></i>
+            </span>
+
+            <div>
+
+              <div style="font-weight:700;font-size:14px;color:var(--green)">
+                38 Neighbours Vouched Today
+              </div>
+
+              <div style="font-size:12px;color:var(--text-secondary);margin-top:2px">
+                Community trust scores updated in real-time
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRENDING SECTION -->
+    <div class="sec-wrap" style="background:var(--surface);
+            border-top:1.5px solid var(--border);
+            padding-top:2rem;
+            padding-bottom:2rem">
+
+      <div class="sec-hd" style="margin-bottom:1rem">
+
+        <div>
+          <div class="sec-eyebrow">
+            <i class="fa-solid fa-fire" style="margin-right:6px;"></i>
+            Right Now
+          </div>
+
+          <h2 class="section-title-sm">
+            Trending Near You
+          </h2>
+        </div>
+
+        <button class="btn btn-ghost btn-sm" onclick="go('feed')">
+          View all →
+        </button>
+
+      </div>
+
+      <div class="hscroll" id="trending-strip"></div>
+
+    </div>
+
+    <!-- FEATURED RECOMMENDATIONS -->
+    <div class="sec-wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow">Community Stories</div>
+          <h2 class="sec-title">Recommended by your neighbours</h2>
+          <p class="sec-sub">Real stories from real people who live near you</p>
+        </div>
+        <button class="btn btn-secondary" onclick="go('feed')">Browse all →</button>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px" id="home-rec-grid">
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="sec-wrap" style="background:var(--earth);border-top:1.5px solid var(--border)">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow" style="color:var(--saffron-mid)">How LocalLift works</div>
+          <h2 class="sec-title" style="color:var(--cream)">Community recommends.<br>Trust grows.</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px" id="how-it-works">
+      </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="sec-wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow">Explore</div>
+          <h2 class="sec-title">Find trusted businesses by type</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px" id="cat-grid-home">
+      </div>
+    </div>
+
+    <!-- RECENTLY VIEWED -->
+    <div id="rv-section" class="sec-wrap"
+      style="display:none;background:var(--surface);border-top:1.5px solid var(--border)">
+      <div class="sec-hd">
+        <div class="section-title-sm"><i class="fa-solid fa-eye" style="margin-right:8px;"></i> Recently Viewed</div>
+        <button class="btn btn-ghost btn-sm" onclick="clearRV()">Clear</button>
+      </div>
+      <div id="rv-list"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="divider"></div>
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Local<em>Lift</em></div>
+          <p class="footer-tagline">Connecting neighbourhoods to local businesses across India. Community-verified. Zero
+            ads. Real trust.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Discover</div>
+          <span class="footer-link" onclick="go('feed')">Browse recommendations</span>
+          <span class="footer-link">Trending near you</span>
+          <span class="footer-link">All categories</span>
+        </div>
+        <div>
+          <div class="footer-col-title">Community</div>
+          <span class="footer-link" onclick="openRecommend()">Recommend a business</span>
+          <span class="footer-link">How vouching works</span>
+          <span class="footer-link" onclick="go('user-profile')">Your contributions</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 LocalLift. Built with <i class="fa-solid fa-heart" style="color:#e63946;"></i> for India's
+          neighbourhoods.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: DISCOVER FEED
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-feed">
+    <div id="feed-grid"></div>
+    <div class="feed-layout">
+      <!-- LEFT SIDEBAR -->
+      <div class="feed-left">
+        <div class="fl-title">Filter</div>
+        <div class="filter-group">
+          <div class="filter-label">Category</div>
+          <div class="chip-row" id="feed-cat-chips"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Trust Level</div>
+          <div class="chip-row">
+            <span class="chip on" data-trust="all" onclick="filterTrust(this,'all')">All</span>
+            <span class="chip" data-trust="high" onclick="filterTrust(this,'high')">High Trust</span>
+            <span class="chip" data-trust="verified" onclick="filterTrust(this,'verified')">Verified</span>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Status</div>
+          <div class="chip-row">
+            <span class="chip on" data-status="all" onclick="filterStatus(this,'all')">All</span>
+            <span class="chip" data-status="open" onclick="filterStatus(this,'open')">Open Now</span>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN FEED -->
+      <div class="feed-main">
+        <div class="feed-search"><span class="si"><i class="fa-solid fa-magnifying-glass"></i></span><input type="text"
+            id="feed-search-input" placeholder="Search businesses, stories…" oninput="feedSearch(this.value)"></div>
+        <div class="sort-row">
+          <p class="sort-label"><strong id="feed-count">0</strong> recommendations near you</p>
+          <select class="sort-select" onchange="sortFeed(this.value)">
+            <option value="trust">Highest Trust</option>
+            <option value="recent">Most Recent</option>
+            <option value="vouches">Most Vouched</option>
+            <option value="distance">Closest</option>
+          </select>
+        </div>
+        <div class="rec-feed" id="rec-feed"></div>
+      </div>
+      <!-- RIGHT SIDEBAR -->
+      <div class="feed-right">
+
+        <div class="rp-section">
+
+          <div class="rp-title">
+            <i class="fa-solid fa-fire" style="margin-right:8px;"></i>
+            Trending Today
+          </div>
+
+          <div id="fp-trending"></div>
+
+        </div>
+
+        <div class="rp-section">
+
+          <div class="rp-title">
+            <i class="fa-solid fa-crown" style="margin-right:8px;"></i>
+            Top Contributors
+          </div>
+
+          <div id="fp-contributors"></div>
+
+        </div>
+
+        <div class="rp-section">
+
+          <div class="rp-title">
+            <i class="fa-solid fa-bolt" style="margin-right:8px;"></i>
+            Live Activity
+          </div>
+
+          <div id="fp-activity"></div>
+
+        </div>
+
+        <button class="btn btn-sage w-full" style="width:100%;margin-top:.5rem" onclick="openRecommend()">
+
+          <i class="fa-solid fa-bullhorn" style="margin-right:8px;"></i>
+          Recommend a Business
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: VENDOR PROFILE
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-profile">
+    <div class="vp-hero" id="vp-hero">
+      <div class="vp-hero-pattern"></div>
+      <div class="vp-hero-content" id="vp-hero-content"></div>
+    </div>
+    <div class="vp-trust-band" id="vp-trust-band"></div>
+    <div class="vp-body" id="vp-body"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: USER PROFILE
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-user-profile">
+    <div class="up-wrap">
+      <div class="up-hero" id="up-hero"></div>
+      <div id="up-body"></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: VENDOR (List/Claim Business)
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-vendor">
+    <div class="vd-wrap">
+      <div class="vd-claim-banner">
+        <div class="vcb-emoji"><i class="fa-solid fa-store"></i></div>
+        <div style="flex:1">
+          <div class="vcb-title">Is your business already on LocalLift?</div>
+          <p class="vcb-desc">Your community may have already recommended you. Search to see if a profile exists — then
+            claim it to respond, update info, and connect with customers.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+          <button class="btn btn-primary" onclick="toast('Search for your business below','info')">Search My
+            Business</button>
+          <button class="btn btn-secondary"
+            style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#fff"
+            onclick="openRecommend()">Not listed? Get recommended</button>
+        </div>
+      </div>
+      <div
+        style="background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1.5rem">
+        <h3 style="font-family:var(--font-display);font-size:20px;font-weight:700;margin-bottom:1.25rem">Search for your
+          business</h3>
+        <div style="display:flex;gap:10px;margin-bottom:1.5rem">
+          <div class="iw" style="flex:1"><span class="ii"><i class="fa-solid fa-magnifying-glass"></i></span><input
+              class="fi fi-icon" type="text" id="vd-search" placeholder="Business name or area…"
+              oninput="vendorSearch(this.value)"></div>
+          <button class="btn btn-primary"
+            onclick="vendorSearch(document.getElementById('vd-search').value)">Search</button>
+        </div>
+        <div id="vd-search-results"></div>
+      </div>
+      <div
+        style="background:var(--saffron-light);border:1.5px solid var(--saffron-mid);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1.5rem">
+        <div class="sec-eyebrow" style="margin-bottom:.75rem">The LocalLift difference</div>
+        <h3
+          style="font-family:var(--font-display);font-size:20px;font-weight:700;margin-bottom:1rem;color:var(--earth)">
+          You don't advertise on LocalLift.<br>Your community vouches for you.</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px" id="vd-why-grid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: ABOUT
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-about">
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <div class="hero-eyebrow"><span class="hero-eyebrow-pulse"></span>Our Story</div>
+        <h1>Built for the <em>streets you actually live on</em>.</h1>
+        <p class="about-lead">LocalLift is a neighbour-powered discovery platform for India's tiffin aunties, tailors,
+          hardware uncles, tutors, electricians and every quiet hero behind your everyday life — verified by the people
+          next door, not algorithms.</p>
+        <div class="hero-cta-row">
+          <button class="btn btn-secondary btn-lg" onclick="go('feed')"><i class="fa-solid fa-magnifying-glass"
+              style="margin-right:8px;"></i> Explore Nearby</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sec-wrap">
+
+      <div class="about-grid">
+
+        <div class="about-card">
+
+          <div class="about-icon">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+
+          <h3>Our Mission</h3>
+
+          <p>
+            Make every small, honest local business as discoverable as the biggest brand —
+            through real neighbour trust, not advertising spend.
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <div class="about-icon">
+            <i class="fa-solid fa-shop"></i>
+          </div>
+
+          <h3>Why We Exist</h3>
+
+          <p>
+            The best people in your neighbourhood are invisible online.
+            We're flipping discovery back to the community that already knows who's good.
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <div class="about-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+
+          <h3>Our Vision</h3>
+
+          <p>
+            A future where opening LocalLift feels like asking a trusted neighbour —
+            instant, warm, honest, free of fake reviews and paid placements.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="sec-wrap about-stats-wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow" style="color:var(--saffron-mid)">By the numbers</div>
+          <h2 class="sec-title stats-heading" style="color:var(--cream) ">Trust, in real time</h2>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div>
+          <div class="as-num">12,400+</div>
+          <div class="as-lbl">Verified businesses</div>
+        </div>
+        <div>
+          <div class="as-num">48</div>
+          <div class="as-lbl">Cities live</div>
+        </div>
+        <div>
+          <div class="as-num">94%</div>
+          <div class="as-lbl">Neighbour verified</div>
+        </div>
+        <div>
+          <div class="as-num">2.1L+</div>
+          <div class="as-lbl">Happy customers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow">From the founders</div>
+          <h2 class="sec-title">A community story</h2>
+          <p class="sec-sub">Why three friends started building LocalLift in 2026</p>
+        </div>
+      </div>
+      <div class="about-story">
+        <p>It started with a tiffin aunty in Koramangala. She fed the entire street, but had zero online presence — and
+          three new families that moved in had no way to find her.</p>
+        <p>We realised the most trusted businesses around us were missing from every map and review site. So we built
+          LocalLift: a place where a neighbour's vouch matters more than a star rating, and where the corner shop can be
+          discovered as easily as a chain.</p>
+        <p>Today thousands of neighbours across India recommend the people they love — and the people they love finally
+          get found.</p>
+      </div>
+    </div>
+
+    <div class="sec-wrap about-cta">
+      <h2>Know someone amazing on your street?</h2>
+      <p>Take 20 seconds to lift them up. It's the kindest thing you'll do today.</p>
+      <div class="hero-cta-row" style="justify-content:center">
+        <button class="btn btn-secondary btn-lg" onclick="go('contact')">Get in touch</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+     PAGE: CONTACT
+     ════════════════════════════════════════════ -->
+  <div class="page" id="pg-contact">
+    <section class="contact-hero">
+      <div class="hero-eyebrow"><span class="hero-eyebrow-pulse"></span>We'd love to hear from you</div>
+      <h1>Say <em>hi</em>, share feedback, or tell us about your neighbourhood.</h1>
+      <p class="about-lead">Questions, partnership ideas, press, or just a kind word — our small team reads every
+        message.</p>
+    </section>
+
+    <div class="sec-wrap">
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <h3 class="contact-h">Send us a message</h3>
+          <form class="contact-form" onsubmit="submitContact(event)">
+            <div class="fg"><label class="fl">Your name</label><input class="fi" type="text" id="ct-name"
+                placeholder="What should we call you?" required></div>
+            <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="ct-email"
+                placeholder="you@example.com" required></div>
+            <div class="fg"><label class="fl">Message</label><textarea class="fta" id="ct-msg"
+                placeholder="Tell us what's on your mind…" required style="min-height:140px"></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg w-full" style="width:100%">Send message</button>
+          </form>
+        </div>
+        <div class="contact-side">
+
+          <div class="contact-info-card">
+
+            <div class="ci-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="ci-label">Email</div>
+
+            <div class="ci-val">hello@locallift.in</div>
+
+          </div>
+
+          <div class="contact-info-card">
+
+            <div class="ci-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="ci-label">Phone</div>
+
+            <div class="ci-val">+91 98765 00001</div>
+
+          </div>
+
+          <div class="contact-info-card">
+
+            <div class="ci-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="ci-label">Office</div>
+
+            <div class="ci-val">
+              Koramangala, Bengaluru<br>
+              India — 560034
+            </div>
+
+          </div>
+
+          <div class="contact-info-card socials">
+
+            <div class="ci-label">Find us</div>
+
+            <div class="ci-socials">
+
+              <span title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+
+              <span title="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+
+              <span title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </span>
+
+              <span title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-eyebrow">FAQ</div>
+          <h2 class="sec-title">Quick answers</h2>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is LocalLift free for businesses?</summary>
+          <p>Yes — completely free, forever. There are no listing fees, ads, or paid rankings.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does "neighbour verified" work?</summary>
+          <p>Real people in the same area vouch for a business. The more verified neighbours that vouch, the higher the
+            trust score.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I claim my business?</summary>
+          <p>Search your business on Discover. If it's listed, hit "Claim" on the profile and follow the quick
+            verification steps.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do you handle fake reviews?</summary>
+          <p>We don't have stars — we have neighbour vouches tied to verified local accounts. That makes fakes far
+            harder to manufacture.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="sec-wrap about-cta">
+      <h2>Prefer a chat on WhatsApp?</h2>
+      <p>We're a few taps away. Send us a hello and we'll reply same day.</p>
+      <button class="btn btn-wa btn-lg" onclick="openWA()"><i class="fa-brands fa-whatsapp"
+          style="margin-right:8px;"></i> Message us on WhatsApp</button>
+    </div>
+  </div>
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>
